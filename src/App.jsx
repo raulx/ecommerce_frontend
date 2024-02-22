@@ -1,6 +1,7 @@
 import "./App.css";
 import axios from "axios";
 import { useState } from "react";
+import Navbar from "./components/Navbar";
 
 // "https://rich-pear-coyote-wig.cyclic.app/"
 // "http://localhost:3300"
@@ -15,11 +16,12 @@ function App() {
     }
   };
   return (
-    <>
-      <div>Hello world..</div>
+    <div className=" bg-neutralgray">
+      <Navbar />
+
       <button onClick={handleClick}>connect backend.</button>
-      <h1>{backend}</h1>
-    </>
+      <h1 className=" text-green-700">{backend}</h1>
+    </div>
   );
 }
 
