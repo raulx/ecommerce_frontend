@@ -20,7 +20,7 @@ function App() {
       <Navbar />
 
       <button onClick={handleClick}>connect backend.</button>
-      <h1 className=" text-green-700">{backend}</h1>
+      <h1 className=" text-green-700 mb-24">{backend}</h1>
     </div>
   );
 }
