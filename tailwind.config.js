@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         neutralgray: "#F5F5F6",
+        textmedium: "#282C3F",
       },
     },
   },
