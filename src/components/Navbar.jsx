@@ -4,37 +4,61 @@ import UseNavigationContext from "../hooks/useNavigationContext";
 
 function Navbar() {
   const [isSearchFocussed, setIsSearchFocussed] = useState(false);
-  const [, setHover] = UseNavigationContext();
+  const { setHover, setItemType } = UseNavigationContext();
+
+  const handleMouseEnter = (d) => {
+    setHover(true);
+    setItemType(d);
+  };
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
   return (
     <div className="bg-white flex gap-8 px-10 h-20 w-full items-center fixed">
       <div className="w-16">
         <img src="../src/images/logo.png" className="w-full h-full" />
       </div>
-      <nav className="flex  h-full items-center">
+      <nav className="flex  h-full items-center gap-4">
         <li
-          className="list-none cursor-pointer font-bold  uppercase text-textmedium  border-b-4 border-b-white h-full justify-center items-center hover:border-b-4 hover:border-b-red-500 transition-all duration-75 flex w-20"
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
+          className="list-none cursor-pointer font-bold  uppercase text-textmedium  border-b-4 border-b-white h-full justify-center items-center hover:border-b-4 hover:border-b-red-500 transition-all duration-75 flex w-16"
+          onMouseEnter={() => handleMouseEnter("mens")}
+          onMouseLeave={() => handleMouseLeave()}
         >
-          Menu
+          Men
         </li>
         <li
-          className="list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-20 hover:border-b-4 hover:border-b-pink-600 border-b-4 border-b-white"
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
+          className="list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-16 hover:border-b-4 hover:border-b-pink-600 border-b-4 border-b-white"
+          onMouseEnter={() => handleMouseEnter("women")}
+          onMouseLeave={() => handleMouseLeave()}
         >
           Women
         </li>
-        <li className="list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-20 hover:border-b-4 hover:border-b-orange-500 border-b-4 border-b-white">
+        <li
+          className="list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-16 hover:border-b-4 hover:border-b-orange-500 border-b-4 border-b-white"
+          onMouseEnter={() => handleMouseEnter("kids")}
+          onMouseLeave={() => handleMouseLeave()}
+        >
           Kids
         </li>
-        <li className="list-none cursor-pointer font-bold  text-textmedium uppercase h-full justify-center items-center flex w-32 hover:border-b-4 hover:border-b-yellow-500 border-b-4 border-b-white">
+        <li
+          className="list-none cursor-pointer font-bold  text-textmedium uppercase h-full justify-center items-center flex w-32 hover:border-b-4 hover:border-b-yellow-500 border-b-4 border-b-white"
+          onMouseEnter={() => handleMouseEnter("homeandliving")}
+          onMouseLeave={() => handleMouseLeave()}
+        >
           Home & Living
         </li>
-        <li className="list-none cursor-pointer font-bold text-gray-700 uppercase h-full justify-center items-center flex w-20 hover:border-b-4 hover:border-b-emerald-500 border-b-4 border-b-white">
+        <li
+          className="list-none cursor-pointer font-bold text-gray-700 uppercase h-full justify-center items-center flex w-16 hover:border-b-4 hover:border-b-emerald-500 border-b-4 border-b-white"
+          onMouseEnter={() => handleMouseEnter("beauty")}
+          onMouseLeave={() => handleMouseLeave()}
+        >
           Beauty
         </li>
-        <li className="list-none cursor-pointer font-bold text-gray-700 uppercase h-full justify-center items-center flex w-20 hover:border-b-4  hover:border-b-fuchsia-600 border-b-4 border-b-white">
+        <li
+          className="list-none cursor-pointer font-bold text-gray-700 uppercase h-full justify-center items-center flex w-16 hover:border-b-4  hover:border-b-fuchsia-600 border-b-4 border-b-white"
+          onMouseEnter={() => handleMouseEnter("studio")}
+          onMouseLeave={() => handleMouseLeave()}
+        >
           Studio
         </li>
       </nav>

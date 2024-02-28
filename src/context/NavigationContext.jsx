@@ -6,8 +6,11 @@ export const navigationContext = createContext();
 
 function NavigationContextProvider({ children }) {
   const [hover, setHover] = useState(false);
+  const [itemType, setItemType] = useState("");
   return (
-    <navigationContext.Provider value={[hover, setHover]}>
+    <navigationContext.Provider
+      value={{ hover, setHover, itemType, setItemType }}
+    >
       {children}
     </navigationContext.Provider>
   );
