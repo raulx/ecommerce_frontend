@@ -8,7 +8,7 @@ import WomenItems from "./WomenItems";
 import UseNavigationCotext from "../../hooks/useNavigationContext";
 
 function NavigationMenu({ itemsType }) {
-  const { setHover } = UseNavigationCotext();
+  const { setHover, setItemType } = UseNavigationCotext();
 
   return (
     <div className="w-screen h-screen transition-all duration-200 fixed mt-20">
@@ -17,9 +17,11 @@ function NavigationMenu({ itemsType }) {
         className="w-5/6 animate-fadeIn  bg-white  left-24 top-0  absolute z-10 bg-opacity-100 border shadow-xl"
         onMouseEnter={() => {
           setHover(true);
+          setItemType(itemsType);
         }}
         onMouseLeave={() => {
           setHover(false);
+          setItemType("");
         }}
       >
         <div>
