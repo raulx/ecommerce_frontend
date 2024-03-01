@@ -31,7 +31,7 @@ function Navbar() {
         </li>
         <li
           className={`list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-16 border-b-4 border-b-white ${
-            itemType === "women" ? "border-b-pink-500" : null
+            itemType === "women" ? "border-b-pink-600" : null
           }`}
           onMouseEnter={() => handleMouseEnter("women")}
           onMouseLeave={() => handleMouseLeave()}
@@ -40,7 +40,7 @@ function Navbar() {
         </li>
         <li
           className={`list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-16 border-b-4 border-b-white ${
-            itemType === "kids" ? "border-b-orange-600" : null
+            itemType === "kids" ? "border-b-orange-500" : null
           }`}
           onMouseEnter={() => handleMouseEnter("kids")}
           onMouseLeave={() => handleMouseLeave()}
@@ -58,7 +58,7 @@ function Navbar() {
         </li>
         <li
           className={`list-none cursor-pointer font-bold text-gray-700 uppercase h-full justify-center items-center flex w-16  border-b-4 border-b-white ${
-            itemType === "beauty" ? "border-b-emerald-600" : null
+            itemType === "beauty" ? "border-b-emerald-500" : null
           }`}
           onMouseEnter={() => handleMouseEnter("beauty")}
           onMouseLeave={() => handleMouseLeave()}

@@ -7,6 +7,7 @@ export default {
       colors: {
         neutralgray: "#F5F5F6",
         textmedium: "#282C3F",
+        greens: "#3ce718",
       },
       keyframes: {
         scaleIn: {
