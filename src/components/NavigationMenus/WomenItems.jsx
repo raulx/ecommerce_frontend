@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function WomenItems() {
   return (
     <div className="flex justify-between px-4">
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-pink-600 font-bold text-md">
             <Link to={"/fusion-wear"}>Indian & Fusion Wear</Link>
@@ -53,7 +53,7 @@ function WomenItems() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6 bg-gray-50">
+      <div className="flex flex-col gap-4 p-6 bg-gray-50 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-pink-600 font-bold text-md">
             <Link to={"/women-western-wear"}>Western Wear</Link>
@@ -107,7 +107,7 @@ function WomenItems() {
           <h1 className="text-pink-600 font-bold text-md">Plus Size</h1>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6 ">
+      <div className="flex flex-col gap-4 p-6 w-[240px] ">
         <div>
           <h1 className="text-pink-600 font-bold text-md">Maternity</h1>
         </div>
@@ -157,7 +157,7 @@ function WomenItems() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6 bg-gray-50">
+      <div className="flex flex-col gap-4 p-6 bg-gray-50 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-pink-600 font-bold text-md">
             Lingerie & Sleepwear
@@ -212,7 +212,7 @@ function WomenItems() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-pink-600 font-bold text-md">Gadgets</h1>
           <ul className="flex flex-col gap-1">

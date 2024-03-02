@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function BeautyItems() {
   return (
     <div className="flex px-6  justify-between">
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-emerald-500 font-bold">Makeup</h1>
           <ul className="flex flex-col gap-1">
@@ -46,7 +46,7 @@ function BeautyItems() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6 bg-gray-50">
+      <div className="flex flex-col gap-4 p-6 bg-gray-50 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-emerald-500 font-bold">Skincare,Bath & Body</h1>
           <ul className="flex flex-col gap-1">
@@ -100,7 +100,7 @@ function BeautyItems() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-emerald-500 font-bold">
             <Link>Haircare</Link>
@@ -150,7 +150,7 @@ function BeautyItems() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6 bg-gray-50">
+      <div className="flex flex-col gap-4 p-6 bg-gray-50 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-emerald-500 font-bold">Appliances</h1>
           <ul className="flex flex-col gap-1">
@@ -200,7 +200,7 @@ function BeautyItems() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-emerald-500 font-bold">Top Brands</h1>
           <ul className="flex flex-col gap-1">

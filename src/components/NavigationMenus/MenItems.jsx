@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function MenItems() {
   return (
     <div className="flex  justify-between px-4">
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-md  text-red-500 font-bold">Topwear</h1>
           <ul className="flex flex-col gap-1">
@@ -57,7 +57,7 @@ function MenItems() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6 bg-gray-50">
+      <div className="flex flex-col gap-4 p-6 bg-gray-50 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-md  text-red-500 font-bold">Bottomwear</h1>
           <ul className="flex flex-col gap-1">
@@ -110,7 +110,7 @@ function MenItems() {
           <h1 className="text-md  text-red-500 font-bold">Plus Size</h1>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-md  text-red-500 font-bold">Footwear</h1>
           <ul className="flex flex-col gap-1">
@@ -148,7 +148,7 @@ function MenItems() {
           <h1 className="text-md  text-red-500 font-bold">Watches</h1>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6 bg-gray-50">
+      <div className="flex flex-col gap-4 p-6 bg-gray-50 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-md  text-red-500 font-bold">
             Sports & Active Wear
@@ -202,7 +202,7 @@ function MenItems() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-md  text-red-500 font-bold">
             Fashion Accessories

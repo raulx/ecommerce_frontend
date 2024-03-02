@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function KidsItems() {
   return (
     <div className="flex px-6 justify-between">
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-orange-500 font-bold">
             <Link>Boys Clothing</Link>
@@ -45,7 +45,7 @@ function KidsItems() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6 bg-gray-50">
+      <div className="flex flex-col gap-4 p-6 bg-gray-50 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-orange-500 font-bold">Girls Clothing</h1>
           <ul className="flex flex-col gap-1">
@@ -97,7 +97,7 @@ function KidsItems() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-orange-500 font-bold">Footwear</h1>
           <ul className="flex flex-col gap-1">
@@ -143,7 +143,7 @@ function KidsItems() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6 bg-gray-50">
+      <div className="flex flex-col gap-4 p-6 bg-gray-50 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-orange-500 font-bold">Infants</h1>
           <ul className="flex flex-col gap-1">
@@ -184,7 +184,7 @@ function KidsItems() {
           <h1 className="text-orange-500 font-bold">Personal Care</h1>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-orange-500 font-bold">Kids Accessories</h1>
           <ul className="flex flex-col gap-1">
