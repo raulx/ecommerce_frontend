@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function KidsItems() {
   return (
-    <div className="flex px-6 justify-between">
+    <div className="flex px-4 justify-between">
       <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-orange-500 font-bold">

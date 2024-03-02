@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function HomeAndLivingItems() {
   return (
-    <div className="flex justify-between px-6">
+    <div className="flex justify-between px-4">
       <div className="flex flex-col gap-4 p-6 w-[240px]">
         <div className="flex flex-col gap-2">
           <h1 className="text-yellow-500 font-bold">Bed Lines & Furnishing</h1>

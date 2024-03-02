@@ -4,15 +4,15 @@ import UseNavigationContext from "../hooks/useNavigationContext";
 
 function Navbar() {
   const [isSearchFocussed, setIsSearchFocussed] = useState(false);
-  const { itemType, setHover, setItemType } = UseNavigationContext();
+  const { menuType, setIsHover, setMenuType } = UseNavigationContext();
 
   const handleMouseEnter = (d) => {
-    setHover(true);
-    setItemType(d);
+    setIsHover(true);
+    setMenuType(d);
   };
   const handleMouseLeave = () => {
-    setHover(false);
-    setItemType("");
+    setIsHover(false);
+    setMenuType("");
   };
   return (
     <div className="bg-white flex gap-8 px-10 h-20 w-full items-center fixed">
@@ -22,10 +22,10 @@ function Navbar() {
           className="w-full h-full"
         />
       </div>
-      <nav className="flex  h-full items-center gap-4">
+      <nav className="flex h-full items-center gap-4">
         <li
           className={`list-none  cursor-pointer font-bold  uppercase text-textmedium h-full text-center flex justify-center items-center border-b-4  ${
-            itemType === "mens" ? "border-b-red-600 " : "border-b-white"
+            menuType === "mens" ? "border-b-red-600 " : "border-b-white"
           } w-16`}
           onMouseEnter={() => handleMouseEnter("mens")}
           onMouseLeave={() => handleMouseLeave()}
@@ -34,7 +34,7 @@ function Navbar() {
         </li>
         <li
           className={`list-none cursor-pointer font-bold text-textmedium uppercase h-full text-center w-16 flex justify-center border-b-4 items-center ${
-            itemType === "women" ? "border-b-pink-600 " : "border-b-white"
+            menuType === "women" ? "border-b-pink-600 " : "border-b-white"
           }`}
           onMouseEnter={() => handleMouseEnter("women")}
           onMouseLeave={() => handleMouseLeave()}
@@ -43,7 +43,7 @@ function Navbar() {
         </li>
         <li
           className={`list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-16 border-b-4  ${
-            itemType === "kids" ? "border-b-orange-500" : "border-b-white"
+            menuType === "kids" ? "border-b-orange-500" : "border-b-white"
           }`}
           onMouseEnter={() => handleMouseEnter("kids")}
           onMouseLeave={() => handleMouseLeave()}
@@ -52,7 +52,7 @@ function Navbar() {
         </li>
         <li
           className={`list-none cursor-pointer font-bold  text-textmedium uppercase h-full justify-center items-center flex w-32  border-b-4  ${
-            itemType === "homeandliving"
+            menuType === "homeandliving"
               ? "border-b-yellow-500"
               : "border-b-white"
           }`}
@@ -63,7 +63,7 @@ function Navbar() {
         </li>
         <li
           className={`list-none cursor-pointer font-bold text-gray-700 uppercase h-full justify-center items-center flex w-16  border-b-4  ${
-            itemType === "beauty" ? "border-b-emerald-500" : "border-b-white"
+            menuType === "beauty" ? "border-b-emerald-500" : "border-b-white"
           }`}
           onMouseEnter={() => handleMouseEnter("beauty")}
           onMouseLeave={() => handleMouseLeave()}

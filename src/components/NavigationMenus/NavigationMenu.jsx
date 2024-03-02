@@ -7,30 +7,30 @@ import Studio from "./Studio";
 import WomenItems from "./WomenItems";
 import UseNavigationCotext from "../../hooks/useNavigationContext";
 
-function NavigationMenu({ itemsType }) {
-  const { setHover, setItemType } = UseNavigationCotext();
+function NavigationMenu({ menuCategory }) {
+  const { setIsHover, setMenuType } = UseNavigationCotext();
 
   return (
     <div className="w-screen h-screen transition-all duration-200 fixed mt-20">
-      <div className="w-full h-full bg-black opacity-45 top-0 left-0 absolute"></div>
+      <div className="w-full h-full bg-black opacity-25 top-0 left-0 absolute"></div>
       <div
-        className=" animate-fadeIn  bg-white  left-24 top-0  absolute z-10 bg-opacity-100 border shadow-xl"
+        className="bg-white fade-in-navigation-menu left-24 top-0  absolute z-10 bg-opacity-100 border shadow-xl"
         onMouseEnter={() => {
-          setHover(true);
-          setItemType(itemsType);
+          setIsHover(true);
+          setMenuType(menuCategory);
         }}
         onMouseLeave={() => {
-          setHover(false);
-          setItemType("");
+          setIsHover(false);
+          setMenuType("");
         }}
       >
         <div>
-          {itemsType == "mens" && <MenItems />}
-          {itemsType == "women" && <WomenItems />}
-          {itemsType == "homeandliving" && <HomeAndLivingItems />}
-          {itemsType == "kids" && <KidsItems />}
-          {itemsType == "beauty" && <BeautyItems />}
-          {itemsType == "studio" && <Studio />}
+          {menuCategory == "mens" && <MenItems />}
+          {menuCategory == "women" && <WomenItems />}
+          {menuCategory == "homeandliving" && <HomeAndLivingItems />}
+          {menuCategory == "kids" && <KidsItems />}
+          {menuCategory == "beauty" && <BeautyItems />}
+          {menuCategory == "studio" && <Studio />}
         </div>
       </div>
     </div>

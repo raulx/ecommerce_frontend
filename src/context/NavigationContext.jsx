@@ -5,11 +5,11 @@ import { createContext, useState } from "react";
 export const navigationContext = createContext();
 
 function NavigationContextProvider({ children }) {
-  const [hover, setHover] = useState(false);
-  const [itemType, setItemType] = useState("");
+  const [ishover, setIsHover] = useState(false);
+  const [menuType, setMenuType] = useState("");
   return (
     <navigationContext.Provider
-      value={{ hover, setHover, itemType, setItemType }}
+      value={{ ishover, setIsHover, menuType, setMenuType }}
     >
       {children}
     </navigationContext.Provider>

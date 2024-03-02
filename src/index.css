@@ -6,3 +6,19 @@ html{
     box-sizing: border-box;
     font-family: "Assistant",sans-serif; 
 }
+
+.fade-in-navigation-menu{
+    animation: fade-in;
+    animation-duration: 200ms;
+    animation-delay: 100ms;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
