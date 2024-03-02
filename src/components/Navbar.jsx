@@ -17,7 +17,10 @@ function Navbar() {
   return (
     <div className="bg-white flex gap-8 px-10 h-20 w-full items-center fixed">
       <div className="w-16">
-        <img src="../src/images/logo.png" className="w-full h-full" />
+        <img
+          src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1709348782/ecommerce_assets/gn3jtvqnydprt1jymi3w.png"
+          className="w-full h-full"
+        />
       </div>
       <nav className="flex  h-full items-center gap-4">
         <li
