@@ -21,17 +21,17 @@ function Navbar() {
       </div>
       <nav className="flex  h-full items-center gap-4">
         <li
-          className={`list-none cursor-pointer font-bold  uppercase text-textmedium border-b-4 border-b-white   h-full justify-center items-center  ${
-            itemType === "mens" ? " border-b-red-600" : null
-          } transition-all duration-75 flex w-16`}
+          className={`list-none  cursor-pointer font-bold  uppercase text-textmedium h-full text-center flex justify-center items-center border-b-4  ${
+            itemType === "mens" ? "border-b-red-600 " : "border-b-white"
+          } w-16`}
           onMouseEnter={() => handleMouseEnter("mens")}
           onMouseLeave={() => handleMouseLeave()}
         >
           Men
         </li>
         <li
-          className={`list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-16 border-b-4 border-b-white ${
-            itemType === "women" ? "border-b-pink-600" : null
+          className={`list-none cursor-pointer font-bold text-textmedium uppercase h-full text-center w-16 flex justify-center border-b-4 items-center ${
+            itemType === "women" ? "border-b-pink-600 " : "border-b-white"
           }`}
           onMouseEnter={() => handleMouseEnter("women")}
           onMouseLeave={() => handleMouseLeave()}
@@ -39,8 +39,8 @@ function Navbar() {
           Women
         </li>
         <li
-          className={`list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-16 border-b-4 border-b-white ${
-            itemType === "kids" ? "border-b-orange-500" : null
+          className={`list-none cursor-pointer font-bold text-textmedium uppercase h-full justify-center items-center flex w-16 border-b-4  ${
+            itemType === "kids" ? "border-b-orange-500" : "border-b-white"
           }`}
           onMouseEnter={() => handleMouseEnter("kids")}
           onMouseLeave={() => handleMouseLeave()}
@@ -48,8 +48,10 @@ function Navbar() {
           Kids
         </li>
         <li
-          className={`list-none cursor-pointer font-bold  text-textmedium uppercase h-full justify-center items-center flex w-32  border-b-4 border-b-white ${
-            itemType === "homeandliving" ? "border-b-yellow-500" : null
+          className={`list-none cursor-pointer font-bold  text-textmedium uppercase h-full justify-center items-center flex w-32  border-b-4  ${
+            itemType === "homeandliving"
+              ? "border-b-yellow-500"
+              : "border-b-white"
           }`}
           onMouseEnter={() => handleMouseEnter("homeandliving")}
           onMouseLeave={() => handleMouseLeave()}
@@ -57,8 +59,8 @@ function Navbar() {
           Home & Living
         </li>
         <li
-          className={`list-none cursor-pointer font-bold text-gray-700 uppercase h-full justify-center items-center flex w-16  border-b-4 border-b-white ${
-            itemType === "beauty" ? "border-b-emerald-500" : null
+          className={`list-none cursor-pointer font-bold text-gray-700 uppercase h-full justify-center items-center flex w-16  border-b-4  ${
+            itemType === "beauty" ? "border-b-emerald-500" : "border-b-white"
           }`}
           onMouseEnter={() => handleMouseEnter("beauty")}
           onMouseLeave={() => handleMouseLeave()}
