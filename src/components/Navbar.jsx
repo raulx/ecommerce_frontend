@@ -1,8 +1,10 @@
 import { CiUser, CiHeart, CiBag1, CiSearch } from "react-icons/ci";
 import { useState } from "react";
+import { FaPlus, FaSearch, FaShoppingBag, FaHeart } from "react-icons/fa";
+import { HiMiniBars3 } from "react-icons/hi2";
 import UseNavigationContext from "../hooks/useNavigationContext";
 
-function Navbar() {
+function DesktopNav() {
   const [isSearchFocussed, setIsSearchFocussed] = useState(false);
   const { menuType, setIsHover, setMenuType } = UseNavigationContext();
 
@@ -15,14 +17,14 @@ function Navbar() {
     setMenuType("");
   };
   return (
-    <div className="bg-white flex gap-8 px-10 h-20 w-full items-center fixed">
-      <div className="w-16">
+    <>
+      <div className="w-16 md:flex hidden">
         <img
           src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1709348782/ecommerce_assets/gn3jtvqnydprt1jymi3w.png"
           className="w-full h-full"
         />
       </div>
-      <nav className="flex h-full items-center gap-4">
+      <nav className="md:flex h-full items-center gap-4 hidden">
         <li
           className={`list-none  cursor-pointer font-bold  uppercase text-textmedium h-full text-center flex justify-center items-center border-b-4  ${
             menuType === "mens" ? "border-b-red-600 " : "border-b-white"
@@ -79,7 +81,7 @@ function Navbar() {
         </li>
       </nav>
       <div
-        className={`flex-grow p-2 border rounded flex items-center bg-neutralgray gap-4 ml-10 group group-focus:bg-white ${
+        className={`flex-grow p-2 border rounded md:flex hidden items-center bg-neutralgray gap-4 ml-10 group group-focus:bg-white ${
           isSearchFocussed && "bg-white"
         }`}
       >
@@ -92,7 +94,7 @@ function Navbar() {
           onBlur={() => setIsSearchFocussed(false)}
         />
       </div>
-      <div className="flex gap-8 h-full">
+      <div className="gap-8 h-full md:flex hidden">
         <div className="flex justify-center items-center flex-col h-full border-b-4 border-b-white hover:border-b-red-500 transition-all duration-75 px-2">
           <CiUser className="text-2xl" />
           <span className=" font-bold text-sm text-textmedium">Profile</span>
@@ -106,6 +108,40 @@ function Navbar() {
           <span className="font-bold text-sm text-textmedium">Bag</span>
         </div>
       </div>
+    </>
+  );
+}
+
+function PhoneNav() {
+  return (
+    <div className="md:hidden flex justify-between w-full items-center">
+      <div className="flex gap-2">
+        <HiMiniBars3 className="text-2xl" />
+        <span className="font-bold">Myntra</span>
+      </div>
+      <div className="flex gap-4">
+        <span>
+          <FaPlus />
+        </span>
+        <span>
+          <FaSearch className="text-xl" />
+        </span>
+        <span>
+          <FaHeart className="text-xl" />
+        </span>
+        <span>
+          <FaShoppingBag className="text-xl" />
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function Navbar() {
+  return (
+    <div className="bg-white flex gap-8 md:px-10 px-4 md:h-20 h-16 w-full items-center fixed">
+      <DesktopNav />
+      <PhoneNav />
     </div>
   );
 }

@@ -11,7 +11,7 @@ function NavigationMenu({ menuCategory }) {
   const { setIsHover, setMenuType } = UseNavigationCotext();
 
   return (
-    <div className="w-screen h-screen transition-all duration-200 fixed mt-20">
+    <div className="w-screen h-screen  transition-all duration-200 fixed mt-20">
       <div className="w-full h-full bg-black opacity-25 top-0 left-0 absolute"></div>
       <div
         className="bg-white fade-in-navigation-menu left-24 top-0  absolute z-10 bg-opacity-100 border shadow-xl"

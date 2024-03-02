@@ -27,7 +27,7 @@ function App() {
         {ishover ? <NavigationMenu menuCategory={menuType} /> : null}
       </header>
       <main>
-        <div className="pt-20">
+        <div className="md:pt-20 pt-16">
           <button onClick={handleClick}>connect backend.</button>
           <h1 className="text-green-700">{backend}</h1>
           <div className="w-full h-48 bg-red-200 border-2" />
