@@ -1,6 +1,6 @@
-import { CiUser, CiHeart, CiBag1, CiSearch } from "react-icons/ci";
+import { CiUser, CiHeart, CiSearch, CiSquarePlus } from "react-icons/ci";
+import { PiBagSimpleLight } from "react-icons/pi";
 import { useState } from "react";
-import { FaPlus, FaSearch, FaShoppingBag, FaHeart } from "react-icons/fa";
 import { HiMiniBars3 } from "react-icons/hi2";
 import UseNavigationContext from "../hooks/useNavigationContext";
 
@@ -104,7 +104,7 @@ function DesktopNav() {
           <span className=" font-bold text-sm text-textmedium">Wishlist</span>
         </div>
         <div className="flex justify-center items-center flex-col cursor-pointer">
-          <CiBag1 className="text-2xl" />
+          <PiBagSimpleLight className="text-2xl" />
           <span className="font-bold text-sm text-textmedium">Bag</span>
         </div>
       </div>
@@ -113,24 +113,25 @@ function DesktopNav() {
 }
 
 function PhoneNav() {
+  const { setPhoneNav } = UseNavigationContext();
   return (
     <div className="md:hidden flex justify-between w-full items-center">
       <div className="flex gap-2">
-        <HiMiniBars3 className="text-2xl" />
-        <span className="font-bold">Myntra</span>
+        <HiMiniBars3 className="text-2xl" onClick={() => setPhoneNav(true)} />
+        <span className="font-bold text-gray-600 ">Myntra</span>
       </div>
       <div className="flex gap-4">
         <span>
-          <FaPlus />
+          <CiSquarePlus className="text-2xl" />
         </span>
         <span>
-          <FaSearch className="text-xl" />
+          <CiSearch className="text-2xl" />
         </span>
         <span>
-          <FaHeart className="text-xl" />
+          <CiHeart className="text-2xl" />
         </span>
         <span>
-          <FaShoppingBag className="text-xl" />
+          <PiBagSimpleLight className="text-2xl" />
         </span>
       </div>
     </div>

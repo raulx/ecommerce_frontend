@@ -7,9 +7,18 @@ export const navigationContext = createContext();
 function NavigationContextProvider({ children }) {
   const [ishover, setIsHover] = useState(false);
   const [menuType, setMenuType] = useState("");
+  const [phoneNav, setPhoneNav] = useState(false);
+
   return (
     <navigationContext.Provider
-      value={{ ishover, setIsHover, menuType, setMenuType }}
+      value={{
+        ishover,
+        setIsHover,
+        menuType,
+        setMenuType,
+        phoneNav,
+        setPhoneNav,
+      }}
     >
       {children}
     </navigationContext.Provider>

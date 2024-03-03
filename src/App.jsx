@@ -3,13 +3,15 @@ import axios from "axios";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import UseNavigationContext from "./hooks/useNavigationContext";
-import NavigationMenu from "./components/NavigationMenus/NavigationMenu";
+import NavigationMenu, {
+  PhoneNavigation,
+} from "./components/NavigationMenus/NavigationMenu";
 
 // "https://rich-pear-coyote-wig.cyclic.app/"
 // "http://localhost:3300"
 function App() {
   const [backend, setbackend] = useState("");
-  const { ishover, menuType } = UseNavigationContext();
+  const { ishover, menuType, phoneNav } = UseNavigationContext();
 
   const handleClick = async () => {
     try {
@@ -25,6 +27,7 @@ function App() {
         {/* note:ishover and menutype states are toggled inside navbar component*/}
         <Navbar />
         {ishover ? <NavigationMenu menuCategory={menuType} /> : null}
+        {phoneNav ? <PhoneNavigation /> : null}
       </header>
       <main>
         <div className="md:pt-20 pt-16">

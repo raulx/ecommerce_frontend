@@ -37,4 +37,18 @@ function NavigationMenu({ menuCategory }) {
   );
 }
 
+function PhoneNavigation() {
+  const { setPhoneNav } = UseNavigationCotext();
+  return (
+    <div className="block md:hidden h-screen w-screen relative">
+      <div
+        className="h-full w-full bg-black opacity-45"
+        onClick={() => setPhoneNav(false)}
+      ></div>
+      <div className="h-full w-3/4 bg-white z-10 absolute left-0 top-0"></div>
+    </div>
+  );
+}
+
 export default NavigationMenu;
+export { PhoneNavigation };
