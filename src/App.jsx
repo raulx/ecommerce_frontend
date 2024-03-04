@@ -11,7 +11,7 @@ import NavigationMenu, {
 // "http://localhost:3300"
 function App() {
   const [backend, setbackend] = useState("");
-  const { ishover, menuType, phoneNav } = UseNavigationContext();
+  const { ishover, menuType } = UseNavigationContext();
 
   const handleClick = async () => {
     try {
@@ -27,7 +27,7 @@ function App() {
         {/* note:ishover and menutype states are toggled inside navbar component*/}
         <Navbar />
         {ishover ? <NavigationMenu menuCategory={menuType} /> : null}
-        {phoneNav ? <PhoneNavigation /> : null}
+        <PhoneNavigation />
       </header>
       <main>
         <div className="md:pt-20 pt-16">

@@ -38,19 +38,26 @@ function NavigationMenu({ menuCategory }) {
 }
 
 function PhoneNavigation() {
-  const { setPhoneNav } = UseNavigationCotext();
+  const { phoneNav, setPhoneNav } = UseNavigationCotext();
   return (
-    <div className="block md:hidden h-screen w-screen fixed">
+    <>
+      {phoneNav && (
+        <div
+          className="h-screen w-screen fixed top-0 left-0 overflow-hidden z-10 bg-black opacity-45"
+          onClick={() => setPhoneNav(false)}
+        ></div>
+      )}
+
       <div
-        className="h-full w-full bg-black opacity-45"
-        onClick={() => setPhoneNav(false)}
-      ></div>
-      <div className="h-full w-3/4 bg-white z-10 absolute left-0 top-0 overflow-y-scroll ">
+        className={`h-screen w-3/4 bg-white z-10  fixed block md:hidden transition-all duration-75 ease-out left-0 top-0 overflow-y-scroll ${
+          phoneNav ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
         <div className="w-full">
           <img src="../src/images/discount500.png" className="w-full h-full" />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
