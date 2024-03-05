@@ -390,18 +390,376 @@ function PhoneNavigation() {
             { title: "Value Packs", url: "/girls-value-packs" },
           ],
         },
-        { title: "Footwear", children: [] },
-        { title: "Toys & Games", children: [] },
-        { title: "Infants", children: [] },
+        {
+          title: "Footwear",
+          children: [
+            { title: "Casual Shoes", url: "/girls-casual-shoes" },
+            { title: "Flipflops", url: "/girls-flip-flops" },
+            { title: "Sports Shoes", url: "/girls-sports-shoes" },
+            { title: "Flats", url: "/girls-flats" },
+            { title: "Sandals", url: "/girls-heels" },
+            { title: "Heels", url: "/girls-heels" },
+            { title: "School Shoes", url: "/girls-school-shoes" },
+            { title: "Socks", url: "/girls-socks" },
+          ],
+        },
+        {
+          title: "Toys & Games",
+          children: [
+            {
+              title: "Learning & Development",
+              url: "/girls-learning-development",
+            },
+            {
+              title: "Activity Toys",
+              url: "/girls-activity toys",
+            },
+            { title: "Soft Toys", url: "/girls-soft-toys" },
+            {
+              title: "Action Figure/Play set",
+              url: "/girls-action-figure-play-set",
+            },
+          ],
+        },
+        {
+          title: "Infants",
+          children: [
+            { title: "Bodysuits", url: "/infants-bodysuits" },
+            {
+              title: "Rompers & Sleepsuits",
+              url: "/infants-rompers-bodysuits",
+            },
+            { title: "Clothing Sets", url: "/infants-clothing-sets" },
+            { title: "Tshirts & Tops", url: "/infants-tshirts-and-tops" },
+            { title: "Dresses", url: "/infants-dresses" },
+            { title: "Bottom Wear", url: "/infants-bottomwear" },
+            { title: "Winter Wear", url: "/infants-winter-wear" },
+            {
+              title: "Innerwear & Sleepwear",
+              url: "/infant-innerwear-and-sleepwear",
+            },
+            { title: "Infant Care", url: "/infant-care" },
+          ],
+        },
         { title: "Home & Bath", url: "/home-and-bath" },
         { title: "Personal Care", url: "/personal-care" },
-        { title: "Kids Accessories", children: [] },
-        { title: "Brands", children: [] },
-        { title: "Age", children: [] },
+        {
+          title: "Kids Accessories",
+          children: [
+            { title: "Bags & Backpacks", url: "/kids-backpacks" },
+            { title: "Watches", url: "/kids-watches" },
+            {
+              title: "Jewellery & Hair accessory",
+              url: "/kids-jewellery-and-hair-accessory",
+            },
+            { title: "Sunglasses", url: "/kids-sunglasses" },
+            {
+              title: "Masks & Protective Gears",
+              url: "/kids-masks-and-protective-gears",
+            },
+            { title: "Caps & Hats", url: "/kids-caps-and-hats" },
+          ],
+        },
+        {
+          title: "Brands",
+          children: [
+            { title: "H&M", url: "/kids-h&m" },
+            { title: "Max Kids", url: "/kids-brand-max" },
+            { title: "Pantaloons", url: "/kids-pantaloons" },
+            { title: "United Colors Of Benetton Kids", url: "/kids-brand-ucb" },
+            { title: "YK", url: "/kids-brand-yk" },
+            { title: "U.S.Polo Assn.Kids", url: "/kids-brand-us-polo-assn" },
+            { title: "Mothercare", url: "/kids-brand-mothercare" },
+            { title: "HRX", url: "/kids-brand-hrx" },
+          ],
+        },
+        {
+          title: "Age",
+          children: [
+            { title: "New Born", url: "/kids-new-born" },
+            { title: "0-2", url: "/kids-0-2" },
+            { title: "2-4Y", url: "/kids-2-4" },
+            { title: "4-6Y", url: "/kids-4-6" },
+            { title: "6-8Y", url: "/kids-6-8" },
+            { title: "8-10Y", url: "/kids-8-10" },
+            { title: "10-12Y", url: "/kids-10-12Y" },
+            { title: "12-14Y", url: "/kids-12-14Y" },
+            { title: "14Y+", url: "/kids-14Y+" },
+          ],
+        },
       ],
     },
-    { title: "Home & Living", children: [] },
-    { title: "Beauty", children: [] },
+    {
+      title: "Home & Living",
+      children: [
+        {
+          title: "Bed Linen & Furnishing",
+          children: [
+            { title: "Bed Runners", url: "/home-and-living-bedrunners" },
+            {
+              title: "Mattress Protectors",
+              url: "/home-and-living-mattress-protectors",
+            },
+            { title: "Bedsheets", url: "/home-and-living-bedsheets" },
+            { title: "Bedding Sets", url: "/home-and-living-bedding-sets" },
+            {
+              title: "Blankets,Quilts & Dohars",
+              url: "/home-and-living-blankets-quilts-and-dohars",
+            },
+            {
+              title: "Pillow & Pillow Covers",
+              url: "/home-and-living-pillow-and-pillow-covers",
+            },
+            { title: "Bed Covers", url: "/home-and-living-bedcovers" },
+            { title: "Diwan Sets", url: "/home-and-living-diwan-sets" },
+            {
+              title: "Chair Pads & Covers",
+              url: "/home-and-living-chair-pads-and-covers",
+            },
+            { title: "Sofa Covers", url: "/home-and-living-sofa-covers" },
+          ],
+        },
+        {
+          title: "Flooring",
+          children: [
+            { title: "Floor Runners", url: "/home-and-living-floor-runners" },
+            { title: "Carpets", url: "/home-and-living-carpets" },
+            {
+              title: "Floor Mats & Dhurries",
+              url: "/home-and-living-floor-mats-and-dhurries",
+            },
+            { title: "Door Mats", url: "/home-and-living-floor-door-mats" },
+          ],
+        },
+        {
+          title: "Bath",
+          children: [
+            { title: "Bath Towels", url: "/home-and-living-bath-towels" },
+            {
+              title: "Hand & Face Towels",
+              url: "/home-and-living-hand-and-face-towels",
+            },
+            { title: "Towels Set", url: "/home-and-living-towels-set" },
+            { title: "Bath Rugs", url: "/home-and-living-bath-rugs" },
+            { title: "Bath Robes", url: "/home-and-living-bath-robes" },
+            {
+              title: "Bathroom Accessories",
+              url: "/home-and-living-bathroom-accessories",
+            },
+            {
+              title: "Shower Curtains",
+              url: "/home-and-living-shower-curtains",
+            },
+          ],
+        },
+        {
+          title: "Lamps & Lighting",
+          children: [
+            {
+              title: "Floor Lamps",
+              url: "/home-and-living-lamps-and-lighting",
+            },
+            { title: "Ceiling Lamps", url: "/home-and-living-ceiling-lamps" },
+            { title: "Table Lamps", url: "/home-and-living-table-lamps" },
+            { title: "Wall Lamps", url: "/home-and-living-wall-lamps" },
+            { title: "Outdoor Lamps", url: "/home-and-living-outdoor-lamps" },
+            { title: "String Lights", url: "/home-and-living-string-lights" },
+          ],
+        },
+        {
+          title: "Home Decor",
+          children: [
+            {
+              title: "Plants & Planters",
+              url: "/home-and-living-plants-and-planters",
+            },
+            {
+              title: "Aromas & Candles",
+              url: "/home-and-living-aromas-and-candles",
+            },
+            { title: "Clocks", url: "/home-and-living-clocks" },
+            { title: "Mirrors", url: "/home-and-living-mirrors" },
+            { title: "Wall Decor", url: "/home-and-living-wall-decor" },
+            { title: "Festive Decor", url: "/home-and-living-festive-decor" },
+            {
+              title: "Pooja Essentials",
+              url: "/home-and-living-pooja-essentials",
+            },
+            {
+              title: "Wall Shelves",
+              url: "/home-and-living-wall-shelves",
+            },
+            { title: "Fountains", url: "/home-and-living-fountains" },
+            {
+              title: "Showpieces & Vases",
+              url: "/home-and-living-showpieces-and-vases",
+            },
+            {
+              title: "Ottoman",
+              url: "/home-and-living-ottoman",
+            },
+          ],
+        },
+        {
+          title: "Cushions & Cushion Covers",
+          url: "/home-and-decor-cushions-and-covers",
+        },
+        { title: "Curtains", url: "/home-and-living-curtains" },
+        { title: "Home Gift Sets", url: "/home-and-living-home-gifts-sets" },
+        {
+          title: "Kitchen & Table",
+          children: [
+            { title: "Table Runners", url: "/home-and-living-table-runners" },
+            {
+              title: "Dinnerware & Serverware",
+              url: "/home-and-living-dinnerware-and-serverware",
+            },
+            {
+              title: "Cups and Mugs",
+              url: "/home-and-living-cups-and-mugs",
+            },
+            {
+              title: "Bakerware & Cookware",
+              url: "/home-and-living-bakeware-and-cookware",
+            },
+            {
+              title: "Kitchen Storage & Tools",
+              url: "/home-and-living-kitchen-storage-and-tools",
+            },
+            {
+              title: "Bar & Drinkware",
+              url: "/home-and-living-bar-and-drinkware",
+            },
+            {
+              title: "Table Covers & Furnishings",
+              url: "/home-and-living-table-covers-and-furnishing",
+            },
+          ],
+        },
+        {
+          title: "Storage",
+          children: [
+            { title: "Bins", url: "/home-and-living-bins" },
+            { title: "Hangers", url: "/home-and-living-hangers" },
+            { title: "Organisers", url: "/home-and-living-organisers" },
+            {
+              title: "Hooks & Holders",
+              url: "/home-and-living-hooks-and-holders",
+            },
+            { title: "Laundry Bags", url: "/home-and-living-laundry-bags" },
+          ],
+        },
+        {
+          title: "Brands",
+          children: [
+            { title: "H&M", url: "/home-and-living-brands-h&m" },
+            {
+              title: "Marks & Spencer",
+              url: "/home-and-living-brands-marks-and-spencers",
+            },
+            {
+              title: "Home Centre",
+              url: "/home-and-living-brands-home-center",
+            },
+            { title: "Spaces", url: "/home-and-living-brands-spaces" },
+            { title: "D'Decor", url: "/home-and-living-brands-d-decor" },
+            { title: "Story@Home", url: "/home-and-living-brands-story-home" },
+            {
+              title: "Pure Home & Living",
+              url: "/home-and-living-pure-brands-home-and-living",
+            },
+            { title: "Swayam", url: "/home-and-living-brands-swayam" },
+            {
+              title: "Raymond Home",
+              url: "/home-and-living-brands-raymond-home",
+            },
+            { title: "Maspar", url: "/home-and-living-brands-maspar" },
+            { title: "My Trident", url: "/home-and-living-brands-my-trident" },
+            { title: "Cortina", url: "/home-and-living-brands-cortina" },
+            { title: "Random", url: "/home-and-living-brands-random" },
+            { title: "Ellementry", url: "/home-and-living-brands-ellementry" },
+            { title: "ROMEE", url: "/home-and-living-brands-romee" },
+            { title: "SEJ by Nisha Gupta", url: "/home-and-living-brands-sej" },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Beauty",
+      children: [
+        { title: "Makeup", url: "/beauty-makeup" },
+        {
+          title: "Skincare,Bath & Body",
+          url: "/beauty-bath-and-body",
+        },
+        {
+          title: "Baby Care",
+          url: "/beauty-baby-care",
+        },
+        { title: "Masks", url: "/beauty-masks" },
+        {
+          title: "Haircare",
+          children: [
+            { title: "Shampoo", url: "/beauty-shampoo" },
+            { title: "Conditioner", url: "/beauty-conditioner" },
+            { title: "Hair Cream", url: "/beauty-hair-cream" },
+            { title: "Hair Oil", url: "/beauty-hair-oil" },
+            { title: "Hair Gel", url: "/beauty-hair-gel" },
+            {
+              title: "Hair Color",
+              url: "/beauty-hair-color",
+            },
+            { title: "Hair Serum", url: "/beauty-hair-serum" },
+            { title: "Hair Accessory", url: "/beauty-hair-accessory" },
+          ],
+        },
+        {
+          title: "Fragrances",
+          children: [
+            { title: "Perfume", url: "/beauty-perfume" },
+            { title: "Deodrant", url: "/beauty-deodrant" },
+            { title: "Body Mist", url: "/beauty-body-mist" },
+          ],
+        },
+        {
+          title: "Appliances",
+          children: [
+            { title: "Hair Straightener", url: "/hair-straightener" },
+            { title: "Hair Dryer", url: "/beauty-hair-dryer" },
+            { title: "Epilator", url: "/beauty-epilator" },
+          ],
+        },
+        {
+          title: "Men's Grooming",
+          children: [
+            { title: "Trimmers", url: "/beauty-trimmers" },
+            { title: "Beard Oil", url: "/beauty-beard-oil" },
+            { title: "Hair Wax", url: "/beauty-hair-wax" },
+          ],
+        },
+        {
+          title: "Beauty Gift & Makeup Set",
+          children: [
+            { title: "Beauty Gift", url: "/beauty-gift" },
+            { title: "Makeup Kit", url: "/beauty-makeup-kit" },
+          ],
+        },
+        { title: "Premium Beauty", url: "/premium-beauty" },
+        {
+          title: "Wellness & Hygiene",
+          url: "/beauty-wellness-and-hygiene",
+        },
+        {
+          title: "Top Brands",
+          children: [
+            { title: "Lakme", url: "/beauty-brand-lakme" },
+            { title: "Maybelline", url: "/beauty-brand-maybelline" },
+            { title: "LOreal", url: "/beauty-brand-loreal" },
+            { title: "Philips", url: "/beauty-brand-philips" },
+          ],
+        },
+      ],
+    },
   ];
   return (
     <>
@@ -452,6 +810,33 @@ function PhoneNavigation() {
             </Accordion>
           );
         })}
+        <hr className="mt-4" />
+        <div className="flex flex-col gap-2 p-4">
+          <div className="h-12">
+            <Link to={"/myntra-studio"}>Myntra Studio</Link>
+          </div>
+          <div className="h-12">
+            <Link to={"/myntra-mall"}>Myntra Mall</Link>
+          </div>
+          <div className="h-12">
+            <Link to={"/myntra-insider"}>Myntra Insider</Link>
+          </div>
+          <div className="h-12">
+            <Link to={"/myntra-gift-cards"}>Gift Cards</Link>
+          </div>
+          <div className="h-12">
+            <Link to={"/myntra-contact-us"}>Contact Us</Link>
+          </div>
+          <div className="h-12">
+            <Link to={"/FAQS"}>FAQs</Link>
+          </div>
+        </div>
+        <div className="w-full">
+          <img
+            className="w-full h-full"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1709655258/ecommerce_assets/c7xjl7l9x8cymwuoo2ow.png"
+          />
+        </div>
       </div>
     </>
   );
