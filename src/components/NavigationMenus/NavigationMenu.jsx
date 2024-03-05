@@ -5,6 +5,9 @@ import KidsItems from "./KidsItems";
 import MenItems from "./MenItems";
 import Studio from "./Studio";
 import WomenItems from "./WomenItems";
+import { Link } from "react-router-dom";
+import Accordion from "../Accordion";
+
 import UseNavigationCotext from "../../hooks/useNavigationContext";
 
 function NavigationMenu({ menuCategory }) {
@@ -39,6 +42,37 @@ function NavigationMenu({ menuCategory }) {
 
 function PhoneNavigation() {
   const { phoneNav, setPhoneNav } = UseNavigationCotext();
+
+  const menuItems = [
+    {
+      title: "men",
+      children: [
+        {
+          title: "Topwear",
+          children: [
+            { title: "T-shirts", url: "/t-shirts" },
+            { title: "Casual Shirts", url: "/casual-shirts" },
+          ],
+        },
+        {
+          title: "Indian & Festive Wear",
+          children: [{ title: "Kurtas & Kurta Sets", url: "/kurtasandsets" }],
+        },
+      ],
+    },
+    {
+      title: "Women",
+      children: [
+        {
+          title: "Indian & Fusion Wear",
+          children: [
+            { title: "Kurtas & Suits", url: "/women-kurtas-and-suits" },
+            { title: "Kurtis,Tunics & Tops", url: "/women-kurtis-and-tunics" },
+          ],
+        },
+      ],
+    },
+  ];
   return (
     <>
       {phoneNav && (
@@ -59,6 +93,27 @@ function PhoneNavigation() {
             className="w-full h-full"
           />
         </div>
+        {menuItems.map((item, index) => {
+          return (
+            <Accordion key={index} title={item.title} bold>
+              {item.children.map((item, index) => {
+                return (
+                  <Accordion key={index} title={item.title}>
+                    <ul className="flex flex-col gap-4 mt-2">
+                      {item.children.map((item, index) => {
+                        return (
+                          <li key={index} className="px-4">
+                            <Link to={item.url}>{item.title}</Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </Accordion>
+                );
+              })}
+            </Accordion>
+          );
+        })}
       </div>
     </>
   );

@@ -14,6 +14,7 @@ html{
     animation-timing-function: linear;
     animation-fill-mode: backwards;
 }
+
 @keyframes fade-in{
     0%{
         opacity: 0;
