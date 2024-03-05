@@ -50,14 +50,59 @@ function PhoneNavigation() {
         {
           title: "Topwear",
           children: [
-            { title: "T-shirts", url: "/t-shirts" },
-            { title: "Casual Shirts", url: "/casual-shirts" },
+            { title: "T-shirts", url: "/men-t-shirts" },
+            { title: "Casual Shirts", url: "/men-casual-shirts" },
+            { title: "Formal Shirts", url: "/men-formal-shirts" },
+            { title: "Sweatshirts", url: "/men-sweatshirts" },
+            { title: "Sweater", url: "/men-sweater" },
+            { title: "Jackets", url: "/men-jackets" },
+            { title: "Blazers & Coats", url: "/men-blazers-coats" },
+            { title: "Suits", url: "/men-suits" },
+            { title: "Rain Jackets", url: "/men-rain-jackets" },
           ],
         },
         {
           title: "Indian & Festive Wear",
-          children: [{ title: "Kurtas & Kurta Sets", url: "/kurtasandsets" }],
+          children: [
+            { title: "Kurtas & Kurta Sets", url: "/men-kurtasandsets" },
+            { title: "Sherwani", url: "/men-sherwani" },
+            { title: "Nehru Jackets", url: "/men-nehru-jackets" },
+            { title: "Dhotis", url: "/men-dhotis" },
+          ],
         },
+        {
+          title: "Bottomwear",
+          children: [
+            { title: "Jeans", url: "/men-jeans" },
+            { title: "Casual Trousers", url: "/men-casual-trousers" },
+            { title: "Formal Trousers", url: "/men-formal-trousers" },
+            { title: "Shorts", url: "/men-shorts" },
+            { title: "Track Pants & Joggers", url: "/men-joggers" },
+          ],
+        },
+        {
+          title: "Innerwear & Sleepwear",
+          children: [
+            { title: "Briefs & Trunks", url: "/men-briefs" },
+            { title: "Boxers", url: "/men-boxers" },
+            { title: "Vests", url: "/men-vests" },
+            {
+              title: "Sleepwear & Loungewear",
+              url: "/men-sleepwear-loungewear",
+            },
+            { title: "Thermals", url: "/men-thermals" },
+          ],
+        },
+        { title: "Plus Size", url: "/men-plus-size" },
+        { title: "Footwear", children: [] },
+        { title: "Personal Care & Grooming", children: [] },
+        { title: "Sunglasses & Frames", children: [] },
+        { title: "Watches", children: [] },
+        { title: "Sports & Active Wear", children: [] },
+        { title: "Gadgets", children: [] },
+        { title: "Fashion Accessories", children: [] },
+        { title: "Bags & Backpacks", children: [] },
+        { title: "Luggages & Trolleys", children: [] },
       ],
     },
     {
@@ -97,19 +142,27 @@ function PhoneNavigation() {
           return (
             <Accordion key={index} title={item.title} bold>
               {item.children.map((item, index) => {
-                return (
-                  <Accordion key={index} title={item.title}>
-                    <ul className="flex flex-col gap-4 mt-2">
-                      {item.children.map((item, index) => {
-                        return (
-                          <li key={index} className="px-4">
-                            <Link to={item.url}>{item.title}</Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </Accordion>
-                );
+                if (item.children) {
+                  return (
+                    <Accordion key={index} title={item.title}>
+                      <ul className="flex flex-col gap-4 mt-2">
+                        {item.children.map((item, index) => {
+                          return (
+                            <li key={index} className="px-4">
+                              <Link to={item.url}>{item.title}</Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </Accordion>
+                  );
+                } else {
+                  return (
+                    <div key={index} className="p-4 h-12">
+                      <Link to={item.url}>{item.title}</Link>
+                    </div>
+                  );
+                }
               })}
             </Accordion>
           );
