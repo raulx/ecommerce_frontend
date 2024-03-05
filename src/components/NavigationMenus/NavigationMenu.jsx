@@ -94,15 +94,103 @@ function PhoneNavigation() {
           ],
         },
         { title: "Plus Size", url: "/men-plus-size" },
-        { title: "Footwear", children: [] },
-        { title: "Personal Care & Grooming", children: [] },
-        { title: "Sunglasses & Frames", children: [] },
-        { title: "Watches", children: [] },
-        { title: "Sports & Active Wear", children: [] },
-        { title: "Gadgets", children: [] },
-        { title: "Fashion Accessories", children: [] },
-        { title: "Bags & Backpacks", children: [] },
-        { title: "Luggages & Trolleys", children: [] },
+        {
+          title: "Footwear",
+          children: [
+            { title: "Casual Shoes", url: "/men-casual-shoes" },
+            { title: "Sports Shoes", url: "/men-sports-shoes" },
+            { title: "Formal Shoes", url: "/men-formal-shoes" },
+            { title: "Sneakers", url: "/men-sneakers" },
+            { title: "Flip Flops", url: "/men-flip-flops" },
+            { title: "Socks", url: "/men-socks" },
+          ],
+        },
+        {
+          title: "Personal Care & Grooming",
+          url: "/men-personal-care-and-grooming",
+        },
+        { title: "Sunglasses & Frames", url: "/men-sunglasses-and-frames" },
+        { title: "Watches", url: "/men-watches" },
+        {
+          title: "Sports & Active Wear",
+          children: [
+            { title: "Sports Shoes", url: "/men-sports-shoes" },
+            { title: "Sports Sandals", url: "/men-sports-sandals" },
+            { title: "Active T-Shirts", url: "/men-active-t-shirts" },
+            {
+              title: "Track Pants & Shorts",
+              url: "/men-trackpants-and-shorts",
+            },
+            {
+              title: "Tracksuits",
+              url: "/men-tracksuits",
+            },
+            {
+              title: "Jackets & Sweatshirts",
+              url: "/men-jackets-and-sweatshirts",
+            },
+            {
+              title: "Sports Accessories",
+              url: "/men-sports-accessories",
+            },
+            {
+              title: "Swimwear",
+              url: "/men-swimwear",
+            },
+          ],
+        },
+        {
+          title: "Gadgets",
+          children: [
+            { title: "Smart Wearables", url: "/men-smart-wearables" },
+            { title: "Fitness Gadgets", url: "/men-fitness-gadgets" },
+            { title: "Headphones", url: "/men-headphones" },
+            { title: "Speakers", url: "/men-speakers" },
+          ],
+        },
+        {
+          title: "Fashion Accessories",
+          children: [
+            { title: "Wallets", url: "/men-wallets" },
+            { title: "Belts", url: "/men-belts" },
+            {
+              title: "Perfumes & Body Mists",
+              url: "/men-perfumes-and-body-mists",
+            },
+            {
+              title: "Trimmers",
+              url: "/men-trimmers",
+            },
+            { title: "Deodrants", url: "/men-deodrants" },
+            {
+              title: "Ties,Cufflinks & Pocket Squares",
+              url: "/men-ties-cufflinks-and-pocket-squares",
+            },
+            {
+              title: "Accessory Gift Sets",
+              url: "/men-accessory-gift-sets",
+            },
+            {
+              title: "Caps & Hats",
+              url: "/men-caps-and-hats",
+            },
+            {
+              title: "Mufflers,Scarves & Gloves",
+              url: "/men-mufflers-scarves-and-gloves",
+            },
+            { title: "Phone Cases", url: "/phone-cases" },
+            {
+              title: "Rings & Wristwear",
+              url: "/men-rings-and-wristwear",
+            },
+            {
+              title: "Helmets",
+              url: "/men-helmets",
+            },
+          ],
+        },
+        { title: "Bags & Backpacks", url: "/bags-bagpacks" },
+        { title: "Luggages & Trolleys", url: "/Luggage-and-trolleys" },
       ],
     },
     {
@@ -113,10 +201,207 @@ function PhoneNavigation() {
           children: [
             { title: "Kurtas & Suits", url: "/women-kurtas-and-suits" },
             { title: "Kurtis,Tunics & Tops", url: "/women-kurtis-and-tunics" },
+            { title: "Sarees", url: "/women-sarees" },
+            { title: "Ethnic Wear", url: "/women-ethnic-wear" },
+            {
+              title: "Leggings,Salwars & Churidars",
+              url: "/women-leggings-salwars-and-churidars",
+            },
+            {
+              title: "Skirts & Plazzos",
+              url: "/women-skirts-and-plazzos",
+            },
+            {
+              title: "Dress Materials",
+              url: "/women-dress-materials",
+            },
+            { title: "Lehenga Cholis", url: "/women-lehenga-cholis" },
+            { title: "Dupatta & Shawls", url: "/women-dupatta-and-shawls" },
+            { title: "Jackets", url: "/women-jackets" },
           ],
         },
+        {
+          title: "Belts,Scarves & More",
+          url: "/women-belts-scarves-and-more",
+        },
+        {
+          title: "Watches & Wearables",
+          url: "/women-watches-and-wearables",
+        },
+        {
+          title: "Western Wear",
+          children: [
+            { title: "Dresses", url: "/women-dresses" },
+            { title: "Tops", url: "/women-tops" },
+            { title: "Tshirts", url: "/women-tshirts" },
+            { title: "Jeans", url: "/women-jeans" },
+            { title: "Trousers & Capris", url: "/women-trouser-and-capris" },
+            { title: "Shorts & Skirts", url: "/women-shorts-and-skirts" },
+            { title: "Co-ords", url: "/women-co-ords" },
+            { title: "Playsuits", url: "/women-playsuits" },
+            { title: "Jumpsuits", url: "/women-playsuit" },
+            { title: "Shrugs", url: "/women-shrugs" },
+            {
+              title: "Sweaters & Sweatshirts",
+              url: "/women-sweater-and-sweatshirts",
+            },
+            { title: "Jackets & Coats", url: "/women-jackets-and-coats" },
+            { title: "Blazers & Waistcoats", url: "/women-blazers-and-coats" },
+          ],
+        },
+        {
+          title: "Plus Size",
+          url: "/women-plus-size",
+        },
+        { title: "Maternity", url: "/women-maternity" },
+        { title: "Sunglasses & Frames", url: "/women-sunglasses-and-frames" },
+        {
+          title: "Footwear",
+          children: [
+            { title: "Flats", url: "/women-flats" },
+            { title: "Casual Shoes", url: "/women-casual-shoes" },
+            { title: "Heels", url: "/women-heels" },
+            { title: "Boots", url: "/women-boots" },
+            { title: "Sports Shoes & Floaters", url: "/women-floaters" },
+          ],
+        },
+        {
+          title: "Sports & Active Wear",
+          children: [
+            { title: "Clothing", url: "/women-clothing" },
+            { title: "Footwear", url: "/women-footwear" },
+            { title: "Sports Accessories", url: "/sports-accessories" },
+            { title: "Sports Equipment", url: "/sports-equipment" },
+          ],
+        },
+        {
+          title: "Lingerie & Sleepwear",
+          children: [
+            { title: "Bra", url: "/women-bra" },
+            { title: "Briefs", url: "/women-briefs" },
+            { title: "Shapewear", url: "/women-shapewear" },
+            {
+              title: "Sleepwear & Loungewear",
+              url: "/women-sleepwear-and-loungewear",
+            },
+            { title: "Swimwear", url: "/women-swimwear" },
+            {
+              title: "Camisoles & Thermals",
+              url: "/women-camisoles-and-thermals",
+            },
+          ],
+        },
+        {
+          title: "Beauty & Personal Care",
+          children: [
+            { title: "Makeup", url: "/women-makeup" },
+            { title: "Skincare", url: "/women-skincare" },
+            { title: "Premium Beauty", url: "/women-beauty-products" },
+            { title: "Lipsticks", url: "/women-lipsticks" },
+            { title: "Fragrances", url: "/women-fragrances" },
+          ],
+        },
+        {
+          title: "Gadgets",
+          children: [
+            { title: "Smart Wearables", url: "/women-smart-wearables" },
+            { title: "Fitness Gadgets", url: "/women-fitness-gadgets" },
+            { title: "Headphones", url: "/women-headphones" },
+            { title: "Speakers", url: "/women-speakers" },
+          ],
+        },
+        {
+          title: "Jewellery",
+          children: [
+            { title: "Fashion Jewellery", url: "/women-fashion-jewellery" },
+            { title: "Fine Jewellery", url: "/women-fine-jewellery" },
+            { title: "Earrings", url: "/women-earrings" },
+          ],
+        },
+        { title: "Backpacks", url: "/women-backpacks" },
+        {
+          title: "Handbags,Bags & Wallets",
+          url: "/women-handbags-and-wallets",
+        },
+        { title: "Luggage & Trolleys", url: "/women-luggage-and-trolleys" },
       ],
     },
+    {
+      title: "Kids",
+      children: [
+        {
+          title: "Boys Clothing",
+          children: [
+            { title: "T-Shirts", url: "/boys-tshirts" },
+            { title: "Shirts", url: "/boys-shirts" },
+            { title: "Shorts", url: "/boys-shorts" },
+            { title: "Jeans", url: "/boys-jeans" },
+            { title: "Trousers", url: "/boys-trousers" },
+            { title: "Clothing Sets", url: "/boys-clothing-sets" },
+            { title: "Ethnic Wear", url: "/boys-ethnic-wear" },
+            {
+              title: "Track Pants & Pyjamas",
+              url: "/boys-trackpants-and-pyjamas",
+            },
+            {
+              title: "Jackets,Sweater & Sweatshirts",
+              url: "/boys-jackets-sweater-and-sweatshirts",
+            },
+            { title: "Party Wear", url: "/boys-party-wear" },
+            {
+              title: "Innerwear & Thermals",
+              url: "/boys-innerwear-and-thermals",
+            },
+            {
+              title: "Nightwear & Loungewear",
+              url: "/boys-nightwear-and-loungewear",
+            },
+            { title: "Value Packs", url: "/boys-value-packs" },
+          ],
+        },
+        {
+          title: "Girls Clothing",
+          children: [
+            { title: "Dresses", url: "/girls-dresses" },
+            { title: "Tops", url: "/girs-tops" },
+            { title: "Tshirts", url: "/girls-tshirts" },
+            { title: "Clothing Sets", url: "/girts-clothing-sets" },
+            { title: "Lehenga Choli", url: "/girls-lehenga-choli-sets" },
+            { title: "Kurta Sets", url: "/girls-kurta-sets" },
+            { title: "Party wear", url: "/girls-party-wear" },
+            {
+              title: "Dungarees & Jumpsuits",
+              url: "/girls-dungarees-and-jumpsuits",
+            },
+            { title: "Skirts & Shorts", url: "/girls-skirts-and-shorts" },
+            { title: "Tights & Leggings", url: "/girls-leggings" },
+            {
+              title: "Jeans, Trousers & Capris",
+              url: "/girls-jeans-trousers-and-capris",
+            },
+            {
+              title: "Jackets,Sweater & Sweatshirts",
+              url: "/girls-jackets-sweater-and-sweatshirts",
+            },
+            {
+              title: "Nightwear & Loungewear",
+              url: "/girls-nightwear-and-loungewear",
+            },
+            { title: "Value Packs", url: "/girls-value-packs" },
+          ],
+        },
+        { title: "Footwear", children: [] },
+        { title: "Toys & Games", children: [] },
+        { title: "Infants", children: [] },
+        { title: "Home & Bath", url: "/home-and-bath" },
+        { title: "Personal Care", url: "/personal-care" },
+        { title: "Kids Accessories", children: [] },
+        { title: "Brands", children: [] },
+        { title: "Age", children: [] },
+      ],
+    },
+    { title: "Home & Living", children: [] },
+    { title: "Beauty", children: [] },
   ];
   return (
     <>
