@@ -6,17 +6,18 @@ function Accordion({ title, bold, children }) {
   const [isOpen, setIsopen] = useState(false);
   return (
     <div
-      className={`w-full transition-all duration-200 overflow-hidden flex flex-col gap-2 p-4 ${
-        isOpen ? "h-auto" : "h-12"
-      }`}
+      className={`w-full flex flex-col  
+      `}
     >
-      <div className="flex justify-between" onClick={() => setIsopen(!isOpen)}>
-        <span className={`active:bg-green-500 ${bold && "font-bold"}`}>
-          {title}
-        </span>
+      <div
+        className="flex justify-between h-full w-full p-4  active:bg-green-200"
+        onClick={() => setIsopen(!isOpen)}
+      >
+        <span className={` ${bold && "font-bold"}`}>{title}</span>
         {isOpen ? <HiChevronDown /> : <HiChevronRight />}
       </div>
-      <div>{children}</div>
+
+      {isOpen && <div className="ml-4">{children}</div>}
     </div>
   );
 }

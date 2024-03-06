@@ -1,6 +1,6 @@
 const menuItems = [
   {
-    title: "men",
+    title: "Men",
     children: [
       {
         title: "Topwear",

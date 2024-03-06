@@ -33,10 +33,10 @@ function PhoneNavigationMenu() {
                 if (item.children) {
                   return (
                     <Accordion key={index} title={item.title}>
-                      <ul className="flex flex-col gap-4 mt-2">
+                      <ul className="flex flex-col gap-4">
                         {item.children.map((item, index) => {
                           return (
-                            <li key={index} className="px-4">
+                            <li key={index} className="px-4 py-2">
                               <Link to={item.url}>{item.title}</Link>
                             </li>
                           );
@@ -46,7 +46,7 @@ function PhoneNavigationMenu() {
                   );
                 } else {
                   return (
-                    <div key={index} className="p-4 h-12">
+                    <div key={index} className="p-4 ">
                       <Link to={item.url}>{item.title}</Link>
                     </div>
                   );
