@@ -11,7 +11,9 @@ function Accordion({ title, bold, children }) {
       }`}
     >
       <div className="flex justify-between" onClick={() => setIsopen(!isOpen)}>
-        <span className={bold && `font-bold`}>{title}</span>
+        <span className={`active:bg-green-500 ${bold && "font-bold"}`}>
+          {title}
+        </span>
         {isOpen ? <HiChevronDown /> : <HiChevronRight />}
       </div>
       <div>{children}</div>
