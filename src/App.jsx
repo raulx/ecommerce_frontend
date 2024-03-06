@@ -3,9 +3,8 @@ import axios from "axios";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import UseNavigationContext from "./hooks/useNavigationContext";
-import NavigationMenu, {
-  PhoneNavigation,
-} from "./components/NavigationMenus/NavigationMenu";
+import DesktopNavigationMenu from "./components/NavigationMenus/DesktopNavigationMenu";
+import PhoneNavigationMenu from "./components/NavigationMenus/PhoneNavigationMenu";
 
 // "https://rich-pear-coyote-wig.cyclic.app/"
 // "http://localhost:3300"
@@ -26,8 +25,11 @@ function App() {
       <header>
         {/* note:ishover and menutype states are toggled inside navbar component*/}
         <Navbar />
-        {ishover ? <NavigationMenu menuCategory={menuType} /> : null}
-        <PhoneNavigation />
+        {/* note:DesktopNavigationMenu and PhoneNavigationMenu are separate navigation 
+        menus for desktop and phone screens any change in one menu must be implemented
+         on the other.  */}
+        {ishover && <DesktopNavigationMenu menuCategory={menuType} />}
+        <PhoneNavigationMenu />
       </header>
       <main>
         <div className="md:pt-20 pt-16">
