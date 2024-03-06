@@ -35,7 +35,7 @@ function App() {
         <div className="md:pt-20 pt-16">
           <button onClick={handleClick}>connect backend.</button>
           <h1 className="text-green-700">{backend}</h1>
-          <div className="w-full h-48 bg-red-200 border-2" />
+          <div className="w-full h-48 bg-red-500 border-2" />
           <div className="w-full h-48 bg-fuchsia-200 border-2" />
           <div className="w-full h-48 bg-green-200 border-2" />
           <div className="w-full h-48 bg-orange-200 border-2" />

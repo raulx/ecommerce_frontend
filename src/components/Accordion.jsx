@@ -10,7 +10,7 @@ function Accordion({ title, bold, children }) {
       `}
     >
       <div
-        className="flex justify-between h-full w-full p-4  active:bg-green-200"
+        className="flex justify-between h-full w-full p-4 ripple"
         onClick={() => setIsopen(!isOpen)}
       >
         <span className={` ${bold && "font-bold"}`}>{title}</span>

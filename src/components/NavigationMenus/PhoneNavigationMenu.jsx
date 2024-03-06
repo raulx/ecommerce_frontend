@@ -20,7 +20,7 @@ function PhoneNavigationMenu() {
           phoneNav ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="w-full">
+        <div className="w-full mb-4">
           <img
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1709543188/ecommerce_assets/z8c1nomlm5y80dr5sipb.png"
             className="w-full h-full"
