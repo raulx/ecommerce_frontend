@@ -26,7 +26,7 @@ function DesktopNavigationMenu({ menuCategory }) {
         <div
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className="absolute top-20 right-4 w-96"
+          className="absolute top-20 right-8 w-80 shadow-lg rounded-lg"
         >
           <ProfileMenu />
         </div>
