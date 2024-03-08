@@ -95,7 +95,15 @@ function DesktopNav() {
         />
       </div>
       <div className="gap-8 h-full md:flex hidden">
-        <div className="flex justify-center items-center flex-col h-full border-b-4 border-b-white hover:border-b-red-500 transition-all duration-75 px-2">
+        <div
+          className="flex justify-center items-center flex-col h-full border-b-4 border-b-white hover:border-b-red-500 transition-all duration-75 px-2"
+          onMouseEnter={() => {
+            handleMouseEnter("profile");
+          }}
+          onMouseLeave={() => {
+            handleMouseLeave();
+          }}
+        >
           <CiUser className="text-2xl" />
           <span className=" font-bold text-sm text-textmedium">Profile</span>
         </div>
