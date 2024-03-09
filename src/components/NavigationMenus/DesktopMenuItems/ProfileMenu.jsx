@@ -1,6 +1,6 @@
 function ProfileMenu() {
   return (
-    <div className="w-full h-full border p-6 bg-white fade-in-navigation-menu flex flex-col gap-4">
+    <div className="w-full h-full border p-6 bg-white fade-in-navigation-menu flex flex-col gap-4 z-10">
       <div className="flex flex-col gap-2">
         <div>
           <h1 className="font-bold text-textmedium">Welcome</h1>

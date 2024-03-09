@@ -148,7 +148,7 @@ function PhoneNav() {
 
 function Navbar() {
   return (
-    <div className="bg-white flex gap-8 md:px-10 px-4 md:h-20 h-16 w-full shadow-sm items-center fixed">
+    <div className="bg-white flex gap-8 md:px-10 px-4 md:h-20 h-16 w-full shadow-sm items-center fixed z-10">
       <DesktopNav />
       <PhoneNav />
     </div>

@@ -26,13 +26,13 @@ function DesktopNavigationMenu({ menuCategory }) {
         <div
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className="absolute top-20 right-8 w-80 shadow-lg rounded-lg"
+          className=" top-20 fixed right-8 w-80 shadow-lg rounded-lg z-10"
         >
           <ProfileMenu />
         </div>
       ) : (
         <>
-          <div className="w-screen h-screen  transition-all duration-200 fixed mt-20">
+          <div className="w-screen h-screen  transition-all duration-200 fixed mt-20 z-10">
             <div className="w-full h-full bg-black opacity-25 top-0 left-0 absolute"></div>
             <div
               className={`bg-white fade-in-navigation-menu ${
