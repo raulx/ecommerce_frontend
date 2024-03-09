@@ -13,7 +13,7 @@ function Studio() {
         <div>
           <img
             className="h-full w-full"
-            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1709880435/ecommerce_assets/rmqnmozocskytdbogwoe.png"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1709963566/ecommerce_assets/s2m8hi9ni1zf2ridkplt.jpg"
           />
         </div>
         <button className="flex w-64 py-2 border-2 rounded justify-center items-center mx-auto gap-4 font-bold text-lg">
