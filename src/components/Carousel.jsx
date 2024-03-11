@@ -36,7 +36,7 @@ function Carousel({
     return () => clearTimeout(slideInterval);
   }, [autoslide, currentSlide, slides, autoSlideInterval]);
   return (
-    <>
+    <div className="flex flex-col gap-4">
       <div className={`grid overflow-hidden`} style={{ width: windowWidth }}>
         <div
           style={{
@@ -51,7 +51,7 @@ function Carousel({
           {children}
         </div>
       </div>
-      <div className="flex justify-center items-center gap-4 mt-6">
+      <div className="flex justify-center items-center gap-4 ">
         {Array(slides)
           .fill(0)
           .map((_, i) => {
@@ -66,7 +66,7 @@ function Carousel({
             );
           })}
       </div>
-    </>
+    </div>
   );
 }
 
