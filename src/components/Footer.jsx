@@ -35,7 +35,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-4 w-48">
             <h1 className="font-bold text-sm">CUSTOMER POLICIES</h1>
             <ul>
               <li>Contact Us</li>
@@ -84,7 +84,25 @@ function Footer() {
               <FaInstagramSquare size={24} />
             </div>
           </div>
-          <div></div>
+          <div className="flex flex-col gap-8">
+            <div className="flex gap-4">
+              <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710263509/ecommerce_assets/vk8dlumfo4hizf3mlu67.png" />
+
+              <div>
+                <span className=" font-bold text-md">100% ORIGINAL </span>
+                guarantee for all products at myntra.com
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710263509/ecommerce_assets/kt65jwhx4t44limr4wrq.png" />
+              <div>
+                <span className=" font-bold text-md">
+                  Returns within 14days{" "}
+                </span>
+                of receiving your order
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
