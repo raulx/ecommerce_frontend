@@ -1,4 +1,5 @@
 import Carousel from "../../components/Carousel";
+import Footer from "../../components/Footer";
 
 function LandingPageDesktop() {
   return (
@@ -68,7 +69,7 @@ function LandingPageDesktop() {
         </h1>
       </div>
       <Carousel slides={2} autoslide={true}>
-        <div className="flex">
+        <div className="flex h-full">
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710217124/ecommerce_assets/discounts/globalbrands/bgsxlv9mslxvm2r3nnhf.jpg" />
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710217124/ecommerce_assets/discounts/globalbrands/xqrtg54ahaviztr6cxi8.jpg" />
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710217124/ecommerce_assets/discounts/globalbrands/r27v0scfdhcblimljvxa.jpg" />
@@ -76,7 +77,7 @@ function LandingPageDesktop() {
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710217123/ecommerce_assets/discounts/globalbrands/ahri7s6apvseoonxgn50.jpg" />
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710217123/ecommerce_assets/discounts/globalbrands/rvnnw907x4e76oxhyl5g.jpg" />
         </div>
-        <div className="flex">
+        <div className="flex h-full">
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710218344/ecommerce_assets/discounts/globalbrands/ncf08ruozmzdzyejz1vb.jpg" />
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710218596/ecommerce_assets/discounts/globalbrands/fift9mhxnbuh638edjye.jpg" />
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710218596/ecommerce_assets/discounts/globalbrands/xslsifcbkl1gmv7slgig.jpg" />
@@ -85,6 +86,47 @@ function LandingPageDesktop() {
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710218345/ecommerce_assets/discounts/globalbrands/owffdgi3v53oiodpoiol.jpg" />
         </div>
       </Carousel>
+      <div className="text-4xl uppercase font-bold my-8">
+        <h1 className="ml-12 tracking-widest" style={{ color: "#3E4152" }}>
+          Shop By Category
+        </h1>
+      </div>
+      <div className="w-11/12 mx-auto flex flex-wrap justify-center items-center  gap-6">
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241241/ecommerce_assets/categories/l1neexr3k7px06rluj1y.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241241/ecommerce_assets/categories/gcvrvw3yuyuukdw0gctr.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241238/ecommerce_assets/categories/wlrbr8uhskg05azmtorm.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241239/ecommerce_assets/categories/cy8atnixffgxjrnais1u.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241241/ecommerce_assets/categories/l1neexr3k7px06rluj1y.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241241/ecommerce_assets/categories/f8yzgtbozymn84nus22z.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241239/ecommerce_assets/categories/mwwqcdsqjpwuahwvrrgx.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241238/ecommerce_assets/categories/lm2vfwq6mxfrpdfrcjpb.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241239/ecommerce_assets/categories/wqgoq88trre66f929ftd.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241241/ecommerce_assets/categories/r3up8ljjje7i2kmiuxzi.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241240/ecommerce_assets/categories/dfhb2ovq29yyc8o49qsj.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241238/ecommerce_assets/categories/iwza11jdmsfpycryrixz.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241238/ecommerce_assets/categories/gwal68lupunqcqdxfbcg.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241239/ecommerce_assets/categories/eatdstabhgopehqi2kvg.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241240/ecommerce_assets/categories/f7bm0bnbabhq2dmzjymf.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241238/ecommerce_assets/categories/jhjsieazovxlijrp5sad.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241239/ecommerce_assets/categories/bowogtffd6jqwnioyguo.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241239/ecommerce_assets/categories/cy8atnixffgxjrnais1u.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241237/ecommerce_assets/categories/stpu0a3jm72ymp4xkddf.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241240/ecommerce_assets/categories/otuxti4lqzsghacur1iz.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241240/ecommerce_assets/categories/wakpdd4ucyf9wcztwq1p.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241238/ecommerce_assets/categories/ggxjxegugo7jo4vmqcls.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241240/ecommerce_assets/categories/y9vgaxzn8e55i6acitv3.png" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241240/ecommerce_assets/categories/efcspk39go5dedfnvdt4.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241241/ecommerce_assets/categories/rjnbvjvhiurojrixyzla.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241241/ecommerce_assets/categories/xwyv9vmh9sifml4p8lys.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241242/ecommerce_assets/categories/avok9pxlt6dljx15lzc6.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241239/ecommerce_assets/categories/lmxaeusfnmooliqqhayt.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241242/ecommerce_assets/categories/rhmlmwag5jf2jmkz6xg9.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241238/ecommerce_assets/categories/civ1t0xazgpvgyndkb3z.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241238/ecommerce_assets/categories/bvctdnardfs7a0xykbcu.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241241/ecommerce_assets/categories/kedjmklehnfezhlw83yr.jpg" />
+        <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710241240/ecommerce_assets/categories/wjb7px73oiwju6i8gcrn.jpg" />
+      </div>
+      <Footer />
     </div>
   );
 }
