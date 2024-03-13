@@ -4,6 +4,14 @@ import { useState } from "react";
 import { HiMiniBars3 } from "react-icons/hi2";
 import UseNavigationContext from "../hooks/useNavigationContext";
 
+function Navbar() {
+  return (
+    <div className="bg-white flex gap-8 md:px-10 px-4 md:h-20 h-16 w-full shadow-sm items-center fixed z-10">
+      <DesktopNav />
+      <PhoneNav />
+    </div>
+  );
+}
 function DesktopNav() {
   const [isSearchFocussed, setIsSearchFocussed] = useState(false);
   const { menuType, setIsHover, setMenuType } = UseNavigationContext();
@@ -81,7 +89,7 @@ function DesktopNav() {
         </li>
       </nav>
       <div
-        className={`flex-grow p-2 border rounded md:flex hidden items-center bg-neutralgray gap-4 ml-10 group group-focus:bg-white ${
+        className={`flex-grow p-2 border rounded md:flex hidden items-center bg-neutralgray gap-4 group group-focus:bg-white ${
           isSearchFocussed && "bg-white"
         }`}
       >
@@ -142,15 +150,6 @@ function PhoneNav() {
           <PiBagSimpleLight className="text-2xl" />
         </span>
       </div>
-    </div>
-  );
-}
-
-function Navbar() {
-  return (
-    <div className="bg-white flex gap-8 md:px-10 px-4 md:h-20 h-16 w-full shadow-sm items-center fixed z-10">
-      <DesktopNav />
-      <PhoneNav />
     </div>
   );
 }
