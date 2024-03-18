@@ -25,15 +25,12 @@ function DesktopNav() {
     setMenuType("");
   };
   return (
-    <div className="h-full w-full flex items-center justify-around">
+    <div className="h-full w-full  items-center justify-around md:flex hidden">
       <div className="flex items-center gap-6 ml-4 h-full">
         <div className="md:flex hidden w-14 h-12">
-          <img
-            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710335387/ecommerce_assets/s6zpsidolphtf34czzuy.png"
-            className="w-full h-full"
-          />
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710335387/ecommerce_assets/s6zpsidolphtf34czzuy.png" />
         </div>
-        <nav className="md:flex h-full items-center gap-4 hidden">
+        <nav className="lg:flex h-full items-center gap-4 hidden">
           <li
             className={`list-none  cursor-pointer font-bold  uppercase text-textmedium h-full text-center flex justify-center items-center border-b-4  ${
               menuType === "mens" ? "border-b-red-600 " : "border-b-white"

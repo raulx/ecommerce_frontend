@@ -29,7 +29,7 @@ function LandingPageDesktop() {
           Medal worthy brands to bag
         </h1>
       </div>
-      <Carousel slides={4} autoslide={false} autoSlideInterval={7000}>
+      <Carousel slides={4} autoslide={true} autoSlideInterval={7000}>
         <div className="flex w-full h-full">
           <div className="w-80">
             <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710211220/ecommerce_assets/discounts/fg7ajh5qewjyrczculga.jpg" />

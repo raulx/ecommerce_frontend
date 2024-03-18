@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className="w-full bg-gray-100 py-12">
       <div className="w-10/12 mx-auto">
-        <div className="flex gap-16">
+        <div className="flex gap-16 flex-wrap">
           <div className="flex flex-col gap-4 w-48">
             <div className="flex flex-col gap-4">
               <h2 className="font-bold text-sm">ONLINE SHOPPING</h2>
