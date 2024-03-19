@@ -131,7 +131,7 @@ function DesktopNav() {
 function PhoneNav() {
   const { setPhoneNav } = UseNavigationContext();
   return (
-    <div className="md:hidden flex justify-between w-full items-center">
+    <div className="md:hidden flex justify-between w-full items-center px-4">
       <div className="flex gap-2">
         <HiMiniBars3 className="text-2xl" onClick={() => setPhoneNav(true)} />
         <span className="font-bold text-gray-600 ">Myntra</span>
