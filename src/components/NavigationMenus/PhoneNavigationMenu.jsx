@@ -16,7 +16,7 @@ function PhoneNavigationMenu() {
       )}
 
       <div
-        className={`h-screen w-3/4 bg-white z-10  fixed block md:hidden transition-all duration-75 ease-out left-0 top-0 overflow-y-scroll ${
+        className={`h-full w-3/4 bg-white z-10  fixed block md:hidden transition-all duration-75 ease-out left-0 top-0 overflow-y-scroll ${
           phoneNav ? "translate-x-0" : "-translate-x-full"
         }`}
       >
