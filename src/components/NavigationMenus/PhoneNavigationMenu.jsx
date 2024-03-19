@@ -76,7 +76,7 @@ function PhoneNavigationMenu() {
             <Link to={"/FAQS"}>FAQs</Link>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full h-32">
           <img
             className="w-full h-full"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1709655258/ecommerce_assets/c7xjl7l9x8cymwuoo2ow.png"
