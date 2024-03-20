@@ -1,7 +1,7 @@
 function LandingPagePhone() {
   return (
     <div>
-      <div className="bg-white flex gap-4 px-2 overflow-x-scroll scroll-smooth">
+      <div className="bg-white hide-scroll scroll flex gap-4 px-2 overflow-x-scroll scroll-smooth">
         <img
           className="h-16 w-16"
           src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931166/ecommerce_assets/mobilescreenassets/i1burwpc1zbpoctodvi9.jpg"

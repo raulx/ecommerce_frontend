@@ -44,6 +44,9 @@ html{
     transition: 0s;
 }
 
+.hide-scroll::-webkit-scrollbar{
+    display: none;
+}
 @keyframes fade-in{
     0%{
         opacity: 0;
