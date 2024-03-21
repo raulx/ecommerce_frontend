@@ -717,4 +717,153 @@ const menuItems = [
   },
 ];
 
-export { menuItems };
+// Note SliderData is used for phone screens it will be hidden on desktop screens.
+
+const FirstSliderData = [
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931166/ecommerce_assets/mobilescreenassets/i1burwpc1zbpoctodvi9.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931163/ecommerce_assets/mobilescreenassets/hvanvdk6qrkybdqaw3ds.jpg",
+  },
+
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931162/ecommerce_assets/mobilescreenassets/jtjrrvj5soqnjyizk7jw.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931163/ecommerce_assets/mobilescreenassets/xkyegr83l6ym2mvdofix.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931161/ecommerce_assets/mobilescreenassets/t1i8ycovvv4qemzkwmp8.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931164/ecommerce_assets/mobilescreenassets/uxh2s6sipwnfy2epneyz.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931164/ecommerce_assets/mobilescreenassets/ldu7rwl2wqoaj07infzu.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931166/ecommerce_assets/mobilescreenassets/vspejgpgvyq1wjrt5ex5.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931164/ecommerce_assets/mobilescreenassets/ygxcnkp5ydldlfryfudl.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931164/ecommerce_assets/mobilescreenassets/ozm0y3zkn9lqkuvfsxev.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931165/ecommerce_assets/mobilescreenassets/rgzhwaeumpdfflt8tj43.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710933120/ecommerce_assets/mobilescreenassets/zgdtofhip1vulzmg2fmd.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931163/ecommerce_assets/mobilescreenassets/qvoj1w7dw6ym0nnwtaej.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931166/ecommerce_assets/mobilescreenassets/rrtqtxehespiquotvhrf.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931166/ecommerce_assets/mobilescreenassets/f0fufpnxyxry53spn9cp.jpg",
+  },
+];
+
+const SecondSliderData = [
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931160/ecommerce_assets/mobilescreenassets/yaju9mpypxhxa6sjhkgy.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931167/ecommerce_assets/mobilescreenassets/xux2pjw5eozhjigv9qxp.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931164/ecommerce_assets/mobilescreenassets/ivruzw0h5rvpznyefybl.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931167/ecommerce_assets/mobilescreenassets/gtwgtflg2kypvixyav8y.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931162/ecommerce_assets/mobilescreenassets/lqkvwoec3r3nhjhkr80e.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931160/ecommerce_assets/mobilescreenassets/psgg9x3pylwh9ve8cdcp.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931167/ecommerce_assets/mobilescreenassets/pvxjbiknmfj3gawj74q3.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931165/ecommerce_assets/mobilescreenassets/m42m6wbyutoglmsnqa5k.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710992659/ecommerce_assets/mobilescreenassets/dpep3ctr5rwoxlmcowr4.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931165/ecommerce_assets/mobilescreenassets/zgodgrqe71s3ztxbwzgs.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931163/ecommerce_assets/mobilescreenassets/sjqfll5ufcxqsduvntmt.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931164/ecommerce_assets/mobilescreenassets/voqgxoedy8rfzilyrluy.jpg",
+  },
+
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931160/ecommerce_assets/mobilescreenassets/ct5qcsik7crggvwgccca.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931164/ecommerce_assets/mobilescreenassets/qvye7ti1kofurmbcnjgw.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931165/ecommerce_assets/mobilescreenassets/rl77csatklonu5wmg8i8.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931162/ecommerce_assets/mobilescreenassets/v4kjopylxwp6pgfdwmxu.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931164/ecommerce_assets/mobilescreenassets/shsyrpgj6ec3vfa76zjs.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931166/ecommerce_assets/mobilescreenassets/cs8xsukv4zglrcdgy7pk.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931163/ecommerce_assets/mobilescreenassets/uwtptdrtkpxdymsk4rqx.jpg",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931160/ecommerce_assets/mobilescreenassets/ixp8jknxrn1mfuh4uirv.jpg",
+  },
+];
+export { menuItems, FirstSliderData, SecondSliderData };
