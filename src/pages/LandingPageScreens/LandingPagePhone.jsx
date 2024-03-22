@@ -1,5 +1,6 @@
 import HorizontalSlider from "../../components/HorizontalSlider";
 import { FirstSliderData, SecondSliderData } from "../../utils/Data";
+import Carousel from "../../components/Carousel";
 function LandingPagePhone() {
   return (
     <div className="bg-white mt-1">
@@ -14,6 +15,22 @@ function LandingPagePhone() {
             return <img key={d.imgUrl} src={d.imgUrl} className="h-16 w-16" />;
           })}
         </HorizontalSlider>
+      </div>
+      <img
+        className="my-4"
+        src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931162/ecommerce_assets/mobilescreenassets/s5wmdyshxcjs5b2t3gvj.jpg"
+      />
+      <div className="my-2">
+        <Carousel slides={8}>
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125393/ecommerce_assets/mobilescreenassets/qj89yjrh5jw0xxet4sup.jpg" />
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125394/ecommerce_assets/mobilescreenassets/wtrxol69gnhpw49zrm6d.jpg" />
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125394/ecommerce_assets/mobilescreenassets/dgavt7dxmb4kwunj7lpt.jpg" />
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125393/ecommerce_assets/mobilescreenassets/xrwbxldbcxoi552xeu72.jpg" />
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125393/ecommerce_assets/mobilescreenassets/khjanlhyd89v7dbnfthq.jpg" />
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125393/ecommerce_assets/mobilescreenassets/qyshigmygkdedsa6hwfq.jpg" />
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125393/ecommerce_assets/mobilescreenassets/zr16dzf3ln9svnx9arbo.jpg" />
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711126967/ecommerce_assets/mobilescreenassets/fimb4b7rlwysekjkqxjf.jpg" />
+        </Carousel>
       </div>
     </div>
   );
