@@ -22,7 +22,7 @@ function PhoneNavigationMenu() {
       >
         <div className="w-full mb-4">
           <img
-            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1709543188/ecommerce_assets/z8c1nomlm5y80dr5sipb.png"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711114729/ecommerce_assets/mobilescreenassets/rwizhghzccqosw7fraiv.jpg"
             className="w-full h-full"
           />
         </div>
@@ -79,7 +79,7 @@ function PhoneNavigationMenu() {
         <div className="w-full h-32">
           <img
             className="w-full h-full"
-            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1709655258/ecommerce_assets/c7xjl7l9x8cymwuoo2ow.png"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711114697/ecommerce_assets/mobilescreenassets/uhssp8vzivp11omhkgfg.jpg"
           />
         </div>
       </div>
