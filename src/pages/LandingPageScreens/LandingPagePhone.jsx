@@ -32,6 +32,15 @@ function LandingPagePhone() {
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711126967/ecommerce_assets/mobilescreenassets/fimb4b7rlwysekjkqxjf.jpg" />
         </Carousel>
       </div>
+      <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711128486/ecommerce_assets/mobilescreenassets/p6ih76hb5q3ofrstgwjc.jpg" />
+      <div className="flex my-2">
+        <div>
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931165/ecommerce_assets/mobilescreenassets/owxcuov03rhw9qjrzglo.jpg" />
+        </div>
+        <div>
+          <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931161/ecommerce_assets/mobilescreenassets/qls0m4hkb32lk9mpoyvn.jpg" />
+        </div>
+      </div>
     </div>
   );
 }
