@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 /* eslint-disable react/prop-types */
 
@@ -12,6 +11,31 @@ function Carousel({
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const touchStartX = useRef(null);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    if (touchStartX.current === null) return;
+    const touchEndX = e.touches[0].clientX;
+    const diffX = touchStartX.current - touchEndX;
+
+    if (diffX > 50) {
+      // Swipe left
+      setCurrentSlide((prevIndex) =>
+        prevIndex === slides - 1 ? 0 : prevIndex + 1
+      );
+    } else if (diffX < -50) {
+      // Swipe right
+      setCurrentSlide((prevIndex) =>
+        prevIndex === 0 ? slides - 1 : prevIndex - 1
+      );
+    }
+
+    touchStartX.current = null;
+  };
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -47,6 +71,8 @@ function Carousel({
             transform: `translateX(-${windowWidth * currentSlide}px)`,
           }}
           className={`grid-rows-1 h-full transition-all bg-white duration-1000 `}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
         >
           {children}
         </div>
