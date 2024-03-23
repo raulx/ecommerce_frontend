@@ -1,5 +1,6 @@
 import HorizontalSlider from "../../components/HorizontalSlider";
 import { FirstSliderData, SecondSliderData } from "../../utils/Data";
+import AutoSlider from "../../components/AutoSlider";
 import Carousel from "../../components/Carousel";
 function LandingPagePhone() {
   return (
@@ -40,6 +41,55 @@ function LandingPagePhone() {
         <div>
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931161/ecommerce_assets/mobilescreenassets/qls0m4hkb32lk9mpoyvn.jpg" />
         </div>
+      </div>
+      <div className="py-4">
+        <AutoSlider>
+          <img
+            className="h-24 w-60"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711198171/ecommerce_assets/mobilescreenassets/nfe1kwmqkcglyeykvkyz.jpg"
+          />
+          <img
+            className="h-24 w-60"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711198171/ecommerce_assets/mobilescreenassets/nduwedgtyv70lknkvlkr.jpg"
+          />
+          <img
+            className="h-24 w-60"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711198171/ecommerce_assets/mobilescreenassets/b4po9roz5bsom04c58cx.jpg"
+          />
+          <img
+            className="h-24 w-60"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711198171/ecommerce_assets/mobilescreenassets/mzncpazd8simmjkroegr.jpg"
+          />
+        </AutoSlider>
+      </div>
+      <div className="py-4">
+        <h1 className="p-2 font-bold">FEATURED BRANDS</h1>
+        <HorizontalSlider>
+          <img
+            className="h-64 w-72"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711211991/ecommerce_assets/mobilescreenassets/qpcqp4prqgy0l28jthcy.jpg"
+          />
+          <img
+            className="h-64 w-72"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711211991/ecommerce_assets/mobilescreenassets/gdnynuqwy9q3eq0cm1f0.jpg"
+          />
+          <img
+            className="h-64 w-72"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711211991/ecommerce_assets/mobilescreenassets/x5hhw4gianoqyceugqp6.jpg"
+          />
+          <img
+            className="h-64 w-72"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711211991/ecommerce_assets/mobilescreenassets/vogpkznylvgpehrt3hpe.jpg"
+          />
+          <img
+            className="h-64 w-72"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711211991/ecommerce_assets/mobilescreenassets/eokddgqezaqapffdn62i.jpg"
+          />
+          <img
+            className="h-64 w-72"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711211991/ecommerce_assets/mobilescreenassets/njlcyw8xi9axai2cqtdd.jpg"
+          />
+        </HorizontalSlider>
       </div>
     </div>
   );

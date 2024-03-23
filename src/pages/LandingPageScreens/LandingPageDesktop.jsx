@@ -4,7 +4,12 @@ import Footer from "../../components/Footer";
 function LandingPageDesktop() {
   return (
     <div className="bg-white pt-8 mt-2 flex flex-col gap-12">
-      <Carousel slides={6} autoslide={true} autoSlideInterval={5000}>
+      <Carousel
+        slides={6}
+        speed={1000}
+        autoslide={true}
+        autoSlideInterval={5000}
+      >
         <div className="flex">
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710159736/ecommerce_assets/ktkhudzxgoavqddcglxg.jpg" />
         </div>

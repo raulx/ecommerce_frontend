@@ -71,8 +71,9 @@ function Carousel({
 
             width: windowWidth * slides,
             transform: `translateX(-${windowWidth * currentSlide}px)`,
+            transitionDuration: `${speed}ms`,
           }}
-          className={`grid-rows-1 h-full transition-all bg-white duration-${speed}`}
+          className={`grid-rows-1 h-full transition-all bg-white`}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
         >
@@ -86,7 +87,10 @@ function Carousel({
             return (
               <div
                 key={i}
-                className={`md:w-2 md:h-2 h-1 w-1 cursor-pointer rounded-full transition-all duration-${speed} hover:bg-gray-600 ${
+                style={{
+                  transitionDuration: `${speed}ms`,
+                }}
+                className={`md:w-2 md:h-2 h-1 w-1 cursor-pointer rounded-full transition-all duration-[${speed}ms] hover:bg-gray-600 ${
                   currentSlide === i ? "bg-gray-600" : "bg-gray-300"
                 }`}
                 onClick={() => setCurrentSlide(i)}
