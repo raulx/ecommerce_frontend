@@ -13,29 +13,6 @@ function Carousel({
 
   const touchStartX = useRef(null);
 
-  const handleTouchStart = (e) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchMove = (e) => {
-    if (touchStartX.current === null) return;
-    const touchEndX = e.touches[0].clientX;
-    const diffX = touchStartX.current - touchEndX;
-
-    if (diffX > 50) {
-      // Swipe left
-      setCurrentSlide((prevIndex) =>
-        prevIndex === slides - 1 ? 0 : prevIndex + 1
-      );
-    } else if (diffX < -50) {
-      // Swipe right
-      setCurrentSlide((prevIndex) =>
-        prevIndex === 0 ? slides - 1 : prevIndex - 1
-      );
-    }
-
-    touchStartX.current = null;
-  };
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -59,6 +36,30 @@ function Carousel({
     }, autoSlideInterval);
     return () => clearTimeout(slideInterval);
   }, [autoslide, currentSlide, slides, autoSlideInterval]);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    if (touchStartX.current === null) return;
+    const touchEndX = e.touches[0].clientX;
+    const diffX = touchStartX.current - touchEndX;
+
+    if (diffX > 10) {
+      // Swipe left
+      setCurrentSlide((prevIndex) =>
+        prevIndex === slides - 1 ? 0 : prevIndex + 1
+      );
+    } else if (diffX < -10) {
+      // Swipe right
+      setCurrentSlide((prevIndex) =>
+        prevIndex === 0 ? slides - 1 : prevIndex - 1
+      );
+    }
+
+    touchStartX.current = null;
+  };
   return (
     <div className="flex flex-col gap-4">
       <div className={`grid overflow-hidden`} style={{ width: windowWidth }}>
