@@ -32,7 +32,7 @@ function LandingPagePhone() {
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711126967/ecommerce_assets/mobilescreenassets/fimb4b7rlwysekjkqxjf.jpg" />
         </Carousel>
       </div>
-      <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711128486/ecommerce_assets/mobilescreenassets/p6ih76hb5q3ofrstgwjc.jpg" />
+      <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711177024/ecommerce_assets/mobilescreenassets/ore0fq9optpjslg9lbvk.jpg" />
       <div className="flex my-2">
         <div>
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931165/ecommerce_assets/mobilescreenassets/owxcuov03rhw9qjrzglo.jpg" />
