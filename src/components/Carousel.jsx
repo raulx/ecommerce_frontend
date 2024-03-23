@@ -6,6 +6,7 @@ function Carousel({
   children,
   slides = 2,
   autoslide = false,
+  speed = 1000,
   autoSlideInterval = 3000,
 }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -71,7 +72,7 @@ function Carousel({
             width: windowWidth * slides,
             transform: `translateX(-${windowWidth * currentSlide}px)`,
           }}
-          className={`grid-rows-1 h-full transition-all bg-white duration-1000 `}
+          className={`grid-rows-1 h-full transition-all bg-white duration-${speed}`}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
         >
@@ -85,7 +86,7 @@ function Carousel({
             return (
               <div
                 key={i}
-                className={`w-2 h-2 cursor-pointer rounded-full transition-all duration-300 hover:bg-gray-600 ${
+                className={`md:w-2 md:h-2 h-1 w-1 cursor-pointer rounded-full transition-all duration-${speed} hover:bg-gray-600 ${
                   currentSlide === i ? "bg-gray-600" : "bg-gray-300"
                 }`}
                 onClick={() => setCurrentSlide(i)}

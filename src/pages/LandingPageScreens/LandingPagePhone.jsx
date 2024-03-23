@@ -21,7 +21,7 @@ function LandingPagePhone() {
         src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1710931162/ecommerce_assets/mobilescreenassets/s5wmdyshxcjs5b2t3gvj.jpg"
       />
       <div className="my-2">
-        <Carousel slides={8}>
+        <Carousel slides={8} speed={300}>
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125393/ecommerce_assets/mobilescreenassets/qj89yjrh5jw0xxet4sup.jpg" />
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125394/ecommerce_assets/mobilescreenassets/wtrxol69gnhpw49zrm6d.jpg" />
           <img src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711125394/ecommerce_assets/mobilescreenassets/dgavt7dxmb4kwunj7lpt.jpg" />
