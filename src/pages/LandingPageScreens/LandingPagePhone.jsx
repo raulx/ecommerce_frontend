@@ -91,6 +91,76 @@ function LandingPagePhone() {
           />
         </HorizontalSlider>
       </div>
+      <div className="bg-[rgb(173,216,231)] px-2 py-4">
+        <div className="flex justify-between px-4">
+          <div>
+            <h1 className="font-bold">Trending men&apos;s wear</h1>
+            <p>Dapper Fits to Rock Every Look!</p>
+          </div>
+          <button className="py-2 px-4 bg-pink-400 rounded-lg text-white">
+            Explore More
+          </button>
+        </div>
+        <div className="flex flex-wrap gap-4 py-4">
+          <img
+            className="w-20 h-32"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/xxfzd63z2holu1fhgnb9.jpg"
+          />
+          <img
+            className="w-20 h-32"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/a6yckb7wkgnjbcdanafq.jpg"
+          />
+          <img
+            className="w-20 h-32"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/bd5usx4llchzycl0swtl.jpg"
+          />
+          <img
+            className="w-20 h-32"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601225/ecommerce_assets/mobilescreenassets/dzirv1zamppqapn5u81l.jpg"
+          />
+          <img
+            className="w-20 h-32"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601225/ecommerce_assets/mobilescreenassets/akfleyhhtitxcbgqyivj.jpg"
+          />
+          <img
+            className="w-20 h-32"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/oc4e8blp7r9qhyc0bztg.jpg"
+          />
+          <img
+            className="w-20 h-32"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/etuyyzgvsj8vdq9pfebv.jpg"
+          />
+          <img
+            className="w-20 h-32"
+            src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/uhlctzyqwn5p2hvpfxiq.jpg"
+          />
+        </div>
+        <div>
+          <h1 className="font-bold">Explore super saver deals</h1>
+          <AutoSlider>
+            <img
+              className="h-48"
+              src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/zt3sq1azovvgtj4vkgsd.jpg"
+            />
+            <img
+              className="h-48"
+              src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/tozmtw7vmenpc0zpyekf.jpg"
+            />
+            <img
+              className="h-48"
+              src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/cnodzq3wnzxsleiwtwqg.jpg"
+            />
+            <img
+              className="h-48"
+              src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/qosmqlyg8panms7k0ixx.jpg"
+            />
+            <img
+              className="h-48"
+              src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/iuqawv5jxxkz2xu9hd3c.jpg"
+            />
+          </AutoSlider>
+        </div>
+      </div>
     </div>
   );
 }

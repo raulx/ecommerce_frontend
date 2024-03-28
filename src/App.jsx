@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="bg-neutralgray relative">
-      <header>
+      <nav>
         {/* note:ishover and menutype states are toggled inside navbar component*/}
         <Navbar />
         {/* note:DesktopNavigationMenu and PhoneNavigationMenu are separate navigation 
@@ -20,7 +20,7 @@ function App() {
          on the other.  */}
         {ishover && <DesktopNavigationMenu menuCategory={menuType} />}
         <PhoneNavigationMenu />
-      </header>
+      </nav>
       <main>
         <div className="md:pt-20 pt-16">
           <Outlet />
