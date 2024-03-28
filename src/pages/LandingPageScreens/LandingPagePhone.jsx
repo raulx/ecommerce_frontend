@@ -101,37 +101,37 @@ function LandingPagePhone() {
             Explore More
           </button>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-4 py-4">
+        <div className="flex flex-wrap justify-between items-center gap-4 p-4">
           <img
-            className=" h-32"
+            className="h-28"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/xxfzd63z2holu1fhgnb9.jpg"
           />
           <img
-            className=" h-32"
+            className=" h-28"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/a6yckb7wkgnjbcdanafq.jpg"
           />
           <img
-            className=" h-32"
+            className=" h-28"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/bd5usx4llchzycl0swtl.jpg"
           />
           <img
-            className=" h-32"
+            className=" h-28"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601225/ecommerce_assets/mobilescreenassets/dzirv1zamppqapn5u81l.jpg"
           />
           <img
-            className=" h-32"
+            className=" h-28"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601225/ecommerce_assets/mobilescreenassets/akfleyhhtitxcbgqyivj.jpg"
           />
           <img
-            className=" h-32"
+            className=" h-28"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/oc4e8blp7r9qhyc0bztg.jpg"
           />
           <img
-            className=" h-32"
+            className=" h-28"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/etuyyzgvsj8vdq9pfebv.jpg"
           />
           <img
-            className=" h-32"
+            className=" h-28"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/uhlctzyqwn5p2hvpfxiq.jpg"
           />
         </div>
