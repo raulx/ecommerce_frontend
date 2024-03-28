@@ -97,41 +97,41 @@ function LandingPagePhone() {
             <h1 className="font-bold">Trending men&apos;s wear</h1>
             <p>Dapper Fits to Rock Every Look!</p>
           </div>
-          <button className="py-2 px-4 bg-pink-400 rounded-lg text-white">
+          <button className="bg-red-500 flex justify-center items-center w-24 h-8 rounded-lg text-xs text-white">
             Explore More
           </button>
         </div>
-        <div className="flex flex-wrap gap-4 py-4">
+        <div className="flex flex-wrap justify-center gap-4 py-4">
           <img
-            className="w-20 h-32"
+            className=" h-32"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/xxfzd63z2holu1fhgnb9.jpg"
           />
           <img
-            className="w-20 h-32"
+            className=" h-32"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/a6yckb7wkgnjbcdanafq.jpg"
           />
           <img
-            className="w-20 h-32"
+            className=" h-32"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/bd5usx4llchzycl0swtl.jpg"
           />
           <img
-            className="w-20 h-32"
+            className=" h-32"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601225/ecommerce_assets/mobilescreenassets/dzirv1zamppqapn5u81l.jpg"
           />
           <img
-            className="w-20 h-32"
+            className=" h-32"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601225/ecommerce_assets/mobilescreenassets/akfleyhhtitxcbgqyivj.jpg"
           />
           <img
-            className="w-20 h-32"
+            className=" h-32"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/oc4e8blp7r9qhyc0bztg.jpg"
           />
           <img
-            className="w-20 h-32"
+            className=" h-32"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/etuyyzgvsj8vdq9pfebv.jpg"
           />
           <img
-            className="w-20 h-32"
+            className=" h-32"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601226/ecommerce_assets/mobilescreenassets/uhlctzyqwn5p2hvpfxiq.jpg"
           />
         </div>
