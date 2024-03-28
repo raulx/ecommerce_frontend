@@ -101,7 +101,7 @@ function LandingPagePhone() {
             Explore More
           </button>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 py-4">
+        <div className="flex flex-wrap justify-center items-center gap-4 py-4">
           <img
             className=" h-32"
             src="https://res.cloudinary.com/dj5yf27lr/image/upload/v1711601831/ecommerce_assets/mobilescreenassets/xxfzd63z2holu1fhgnb9.jpg"
